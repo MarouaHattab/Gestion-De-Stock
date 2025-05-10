@@ -1,0 +1,230 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C16D52-35F3-4F2E-8CCE-2716EF87C8F8}|GestionDeStock.Data\\GestionDeStock.Data.csproj|c:\\users\\msi\\source\\repos\\gestiondestock\\gestiondestock.data\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C16D52-35F3-4F2E-8CCE-2716EF87C8F8}|GestionDeStock.Data\\GestionDeStock.Data.csproj|solutionrelative:gestiondestock.data\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|c:\\users\\msi\\source\\repos\\gestiondestock\\gestiondestock\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|c:\\users\\msi\\source\\repos\\gestiondestock\\gestiondestock\\gestiondestock.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\gestiondestock.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C16D52-35F3-4F2E-8CCE-2716EF87C8F8}|GestionDeStock.Data\\GestionDeStock.Data.csproj|c:\\users\\msi\\source\\repos\\gestiondestock\\gestiondestock.data\\entites\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C16D52-35F3-4F2E-8CCE-2716EF87C8F8}|GestionDeStock.Data\\GestionDeStock.Data.csproj|solutionrelative:gestiondestock.data\\entites\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C16D52-35F3-4F2E-8CCE-2716EF87C8F8}|GestionDeStock.Data\\GestionDeStock.Data.csproj|c:\\users\\msi\\source\\repos\\gestiondestock\\gestiondestock.data\\entites\\stockout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C16D52-35F3-4F2E-8CCE-2716EF87C8F8}|GestionDeStock.Data\\GestionDeStock.Data.csproj|solutionrelative:gestiondestock.data\\entites\\stockout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C16D52-35F3-4F2E-8CCE-2716EF87C8F8}|GestionDeStock.Data\\GestionDeStock.Data.csproj|c:\\users\\msi\\source\\repos\\gestiondestock\\gestiondestock.data\\entites\\stockin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C16D52-35F3-4F2E-8CCE-2716EF87C8F8}|GestionDeStock.Data\\GestionDeStock.Data.csproj|solutionrelative:gestiondestock.data\\entites\\stockin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C16D52-35F3-4F2E-8CCE-2716EF87C8F8}|GestionDeStock.Data\\GestionDeStock.Data.csproj|c:\\users\\msi\\source\\repos\\gestiondestock\\gestiondestock.data\\entites\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C16D52-35F3-4F2E-8CCE-2716EF87C8F8}|GestionDeStock.Data\\GestionDeStock.Data.csproj|solutionrelative:gestiondestock.data\\entites\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C16D52-35F3-4F2E-8CCE-2716EF87C8F8}|GestionDeStock.Data\\GestionDeStock.Data.csproj|c:\\users\\msi\\source\\repos\\gestiondestock\\gestiondestock.data\\entites\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C16D52-35F3-4F2E-8CCE-2716EF87C8F8}|GestionDeStock.Data\\GestionDeStock.Data.csproj|solutionrelative:gestiondestock.data\\entites\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C16D52-35F3-4F2E-8CCE-2716EF87C8F8}|GestionDeStock.Data\\GestionDeStock.Data.csproj|c:\\users\\msi\\source\\repos\\gestiondestock\\gestiondestock.data\\gestiondestock.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C4C16D52-35F3-4F2E-8CCE-2716EF87C8F8}|GestionDeStock.Data\\GestionDeStock.Data.csproj|solutionrelative:gestiondestock.data\\gestiondestock.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|c:\\users\\msi\\source\\repos\\gestiondestock\\gestiondestock\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|c:\\users\\msi\\source\\repos\\gestiondestock\\gestiondestock\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "GestionDeStock\\ServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "GestionDeStock\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T22:21:26.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock.Data\\Entites\\User.cs",
+              "RelativeDocumentMoniker": "GestionDeStock.Data\\Entites\\User.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock.Data\\Entites\\User.cs",
+              "RelativeToolTip": "GestionDeStock.Data\\Entites\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T21:46:54.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StockOut.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock.Data\\Entites\\StockOut.cs",
+              "RelativeDocumentMoniker": "GestionDeStock.Data\\Entites\\StockOut.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock.Data\\Entites\\StockOut.cs",
+              "RelativeToolTip": "GestionDeStock.Data\\Entites\\StockOut.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T21:46:34.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StockIn.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock.Data\\Entites\\StockIn.cs",
+              "RelativeDocumentMoniker": "GestionDeStock.Data\\Entites\\StockIn.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock.Data\\Entites\\StockIn.cs",
+              "RelativeToolTip": "GestionDeStock.Data\\Entites\\StockIn.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T21:46:12.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock.Data\\Entites\\Product.cs",
+              "RelativeDocumentMoniker": "GestionDeStock.Data\\Entites\\Product.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock.Data\\Entites\\Product.cs",
+              "RelativeToolTip": "GestionDeStock.Data\\Entites\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T21:45:38.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock.Data\\Entites\\Category.cs",
+              "RelativeDocumentMoniker": "GestionDeStock.Data\\Entites\\Category.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock.Data\\Entites\\Category.cs",
+              "RelativeToolTip": "GestionDeStock.Data\\Entites\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T21:42:17.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock.Data\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "GestionDeStock.Data\\ServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock.Data\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "GestionDeStock.Data\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T21:40:15.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GestionDeStock.Data",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock.Data\\GestionDeStock.Data.csproj",
+              "RelativeDocumentMoniker": "GestionDeStock.Data\\GestionDeStock.Data.csproj",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock.Data\\GestionDeStock.Data.csproj",
+              "RelativeToolTip": "GestionDeStock.Data\\GestionDeStock.Data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-10T21:38:53.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GestionDeStock",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock\\GestionDeStock.csproj",
+              "RelativeDocumentMoniker": "GestionDeStock\\GestionDeStock.csproj",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock\\GestionDeStock.csproj",
+              "RelativeToolTip": "GestionDeStock\\GestionDeStock.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-10T21:25:53.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1948668853:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1316228269:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "GestionDeStock\\MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock\\MainForm.Designer.cs",
+              "RelativeToolTip": "GestionDeStock\\MainForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T21:26:04.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainForm.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock\\MainForm.cs",
+              "RelativeDocumentMoniker": "GestionDeStock\\MainForm.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock\\MainForm.cs [Conception]",
+              "RelativeToolTip": "GestionDeStock\\MainForm.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T21:25:04.597Z",
+              "EditorCaption": " [Conception]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
