@@ -10,6 +10,7 @@ namespace GestionDeStock.Data.Entites
     {
         public int CategoryId { get; set; }
         public string Name { get; set; }
+        public string? Description { get; set; }
 
         // Navigation property
         public virtual ICollection<Product> Products { get; set; } = new List<Product>();
