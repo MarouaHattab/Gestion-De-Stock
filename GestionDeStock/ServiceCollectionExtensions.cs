@@ -13,33 +13,33 @@ namespace GestionDeStock
         {
             // Register main form
             services.AddTransient<MainForm>();
-            
+
             // Comment out forms that don't exist yet
             // Uncomment these as you create the forms
-            
+
             // Register login form
             // services.AddTransient<LoginForm.LoginForm>();
-            
+
             // Register product forms
-            // services.AddTransient<ProductForm.ProductsListForm>();
-            // services.AddTransient<ProductForm.ProductDetailsForm>();
-            
+            services.AddTransient<ProductForm.ProductListForm>();
+            services.AddTransient<ProductForm.ProductDetailsForm>();
+
             // Register category forms
-            // services.AddTransient<CategoryForm.CategoriesListForm>();
-            // services.AddTransient<CategoryForm.CategoryDetailsForm>();
-            
+            services.AddTransient<CategoryForm.Category_Form>();
+            services.AddTransient<CategoryForm.CategoryDetailsForm>();
+
             // Register stock movement forms
-            // services.AddTransient<StockInForm.StockInListForm>();
-            // services.AddTransient<StockInForm.StockInDetailsForm>();
-            // services.AddTransient<StockOutForm.StockOutListForm>();
-            // services.AddTransient<StockOutForm.StockOutDetailsForm>();
-            
+            services.AddTransient<StockInForm.StockInForm>();
+            services.AddTransient<StockInForm.StockInForm>();
+            services.AddTransient<StockOutForm.StockOutForm>();
+            services.AddTransient<StockOutForm.StockOutForm>();
+
             // Register alert form
-            // services.AddTransient<AlertForm.AlertsForm>();
-            
+            services.AddTransient<AlertForm.AlertForm>();
+
             // Register statistics form
-            // services.AddTransient<StatForm.StatisticsForm>();
-            
+            services.AddTransient<StatForm.StatForm>();
+
             // Register import/export form
             // services.AddTransient<ImportExportForm.ImportExportForm>();
         }

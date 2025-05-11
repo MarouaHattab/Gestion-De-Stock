@@ -10,11 +10,9 @@
 
   <ItemGroup>
     <Folder Include="LoginForm\" />
-    <Folder Include="MainForm\" />
     <Folder Include="CategoryForm\" />
     <Folder Include="AlertForm\" />
     <Folder Include="ImportExportForm\" />
-    <Folder Include="StatForm\" />
     <Folder Include="StockOutForm\" />
     <Folder Include="StockInForm\" />
     <Folder Include="ProductForm\" />
