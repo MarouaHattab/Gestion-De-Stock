@@ -3,8 +3,52 @@
   "WorkspaceRootPath": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|d:\\tp c_sharp\\gestiondestock\\gestiondestock\\gestiondestock\\stockoutform\\stockoutform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\stockoutform\\stockoutform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|d:\\tp c_sharp\\gestiondestock\\gestiondestock\\gestiondestock\\stockinform\\stockinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\stockinform\\stockinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|d:\\tp c_sharp\\gestiondestock\\gestiondestock\\gestiondestock\\loginform\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\loginform\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\gestiondestock\\loginform\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\loginform\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\gestiondestock\\productform\\productdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\productform\\productdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\gestiondestock\\dashboardform\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\dashboardform\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\gestiondestock\\categoryform\\category form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\categoryform\\category form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\gestiondestock\\categoryform\\categorydetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\categoryform\\categorydetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\gestiondestock\\statform\\statform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\statform\\statform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|d:\\tp c_sharp\\gestiondestock\\gestiondestock\\gestiondestock\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\gestiondestock\\productform\\productlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\productform\\productlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|d:\\tp c_sharp\\gestiondestock\\gestiondestock\\gestiondestock\\productform\\productlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\productform\\productlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|d:\\tp c_sharp\\gestiondestock\\gestiondestock\\gestiondestock\\loginform\\registerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,44 +59,12 @@
       "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\loginform\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|d:\\tp c_sharp\\gestiondestock\\gestiondestock\\gestiondestock\\loginform\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\loginform\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|d:\\tp c_sharp\\gestiondestock\\gestiondestock\\gestiondestock\\dashboardform\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\dashboardform\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|d:\\tp c_sharp\\gestiondestock\\gestiondestock\\gestiondestock\\dashboardform\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\dashboardform\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\gestiondestock\\categoryform\\categorydetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\categoryform\\categorydetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|d:\\tp c_sharp\\gestiondestock\\gestiondestock\\gestiondestock\\statform\\statform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\statform\\statform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|d:\\tp c_sharp\\gestiondestock\\gestiondestock\\gestiondestock\\categoryform\\category form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\categoryform\\category form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|d:\\tp c_sharp\\gestiondestock\\gestiondestock\\gestiondestock\\productform\\productdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\productform\\productdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\gestiondestock\\productform\\productlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\productform\\productlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|d:\\tp c_sharp\\gestiondestock\\gestiondestock\\gestiondestock\\productform\\productdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\productform\\productdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|d:\\tp c_sharp\\gestiondestock\\gestiondestock\\gestiondestock\\productform\\productlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\productform\\productlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|d:\\tp c_sharp\\gestiondestock\\gestiondestock\\gestiondestock\\categoryform\\category form.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|d:\\tp c_sharp\\gestiondestock\\gestiondestock\\gestiondestock\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|d:\\tp c_sharp\\gestiondestock\\gestiondestock\\gestiondestock\\loginform\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\loginform\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|d:\\tp c_sharp\\gestiondestock\\gestiondestock\\gestiondestock\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -122,20 +130,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RegisterForm.cs",
-              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\LoginForm\\RegisterForm.cs",
-              "RelativeDocumentMoniker": "GestionDeStock\\LoginForm\\RegisterForm.cs",
-              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\LoginForm\\RegisterForm.cs",
-              "RelativeToolTip": "GestionDeStock\\LoginForm\\RegisterForm.cs",
-              "ViewState": "AgIAAP0AAAAAAAAAAAAqwBIBAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "StockOutForm.cs [Conception]",
+              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\StockOutForm\\StockOutForm.cs",
+              "RelativeDocumentMoniker": "GestionDeStock\\StockOutForm\\StockOutForm.cs",
+              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\StockOutForm\\StockOutForm.cs [Conception]",
+              "RelativeToolTip": "GestionDeStock\\StockOutForm\\StockOutForm.cs [Conception]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T10:53:17.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T14:25:15.581Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductDetailsForm.cs [Conception]",
+              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\ProductForm\\ProductDetailsForm.cs",
+              "RelativeDocumentMoniker": "GestionDeStock\\ProductForm\\ProductDetailsForm.cs",
+              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\ProductForm\\ProductDetailsForm.cs [Conception]",
+              "RelativeToolTip": "GestionDeStock\\ProductForm\\ProductDetailsForm.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T11:20:35.488Z",
+              "EditorCaption": " [Conception]"
             },
             {
               "$type": "Document",
@@ -151,45 +170,28 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginForm.Designer.cs",
+              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\LoginForm\\LoginForm.Designer.cs",
+              "RelativeDocumentMoniker": "GestionDeStock\\LoginForm\\LoginForm.Designer.cs",
+              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\LoginForm\\LoginForm.Designer.cs",
+              "RelativeToolTip": "GestionDeStock\\LoginForm\\LoginForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T11:00:35.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RegisterForm.Designer.cs",
-              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\LoginForm\\RegisterForm.Designer.cs",
-              "RelativeDocumentMoniker": "GestionDeStock\\LoginForm\\RegisterForm.Designer.cs",
-              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\LoginForm\\RegisterForm.Designer.cs",
-              "RelativeToolTip": "GestionDeStock\\LoginForm\\RegisterForm.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIUAAAAAAAAAAAAAAA==",
+              "Title": "StockInForm.cs [Conception]",
+              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\StockInForm\\StockInForm.cs",
+              "RelativeDocumentMoniker": "GestionDeStock\\StockInForm\\StockInForm.cs",
+              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\StockInForm\\StockInForm.cs [Conception]",
+              "RelativeToolTip": "GestionDeStock\\StockInForm\\StockInForm.cs [Conception]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T10:54:44.091Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginForm.cs [Conception]",
-              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\LoginForm\\LoginForm.cs",
-              "RelativeDocumentMoniker": "GestionDeStock\\LoginForm\\LoginForm.cs",
-              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\LoginForm\\LoginForm.cs [Conception]",
-              "RelativeToolTip": "GestionDeStock\\LoginForm\\LoginForm.cs [Conception]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T11:01:07.154Z",
+              "WhenOpened": "2025-05-11T14:20:50.678Z",
               "EditorCaption": " [Conception]"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DashboardForm.cs",
-              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\DashboardForm\\DashboardForm.cs",
-              "RelativeDocumentMoniker": "GestionDeStock\\DashboardForm\\DashboardForm.cs",
-              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\DashboardForm\\DashboardForm.cs",
-              "RelativeToolTip": "GestionDeStock\\DashboardForm\\DashboardForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T00:13:39.236Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -206,30 +208,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "CategoryDetailsForm.cs [Conception]",
-              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\CategoryForm\\CategoryDetailsForm.cs",
-              "RelativeDocumentMoniker": "GestionDeStock\\CategoryForm\\CategoryDetailsForm.cs",
-              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\CategoryForm\\CategoryDetailsForm.cs [Conception]",
-              "RelativeToolTip": "GestionDeStock\\CategoryForm\\CategoryDetailsForm.cs [Conception]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T04:00:42.726Z",
-              "EditorCaption": " [Conception]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StatForm.cs [Conception]",
-              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\StatForm\\StatForm.cs",
-              "RelativeDocumentMoniker": "GestionDeStock\\StatForm\\StatForm.cs",
-              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\StatForm\\StatForm.cs [Conception]",
-              "RelativeToolTip": "GestionDeStock\\StatForm\\StatForm.cs [Conception]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T11:59:27.229Z",
-              "EditorCaption": " [Conception]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Category Form.cs [Conception]",
               "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\CategoryForm\\Category Form.cs",
               "RelativeDocumentMoniker": "GestionDeStock\\CategoryForm\\Category Form.cs",
@@ -241,14 +219,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProductDetailsForm.cs [Conception]",
-              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\ProductForm\\ProductDetailsForm.cs",
-              "RelativeDocumentMoniker": "GestionDeStock\\ProductForm\\ProductDetailsForm.cs",
-              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\ProductForm\\ProductDetailsForm.cs [Conception]*",
-              "RelativeToolTip": "GestionDeStock\\ProductForm\\ProductDetailsForm.cs [Conception]*",
+              "DocumentIndex": 7,
+              "Title": "CategoryDetailsForm.cs [Conception]",
+              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\CategoryForm\\CategoryDetailsForm.cs",
+              "RelativeDocumentMoniker": "GestionDeStock\\CategoryForm\\CategoryDetailsForm.cs",
+              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\CategoryForm\\CategoryDetailsForm.cs [Conception]",
+              "RelativeToolTip": "GestionDeStock\\CategoryForm\\CategoryDetailsForm.cs [Conception]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T11:20:35.488Z",
+              "WhenOpened": "2025-05-11T04:00:42.726Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StatForm.cs [Conception]",
+              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\StatForm\\StatForm.cs",
+              "RelativeDocumentMoniker": "GestionDeStock\\StatForm\\StatForm.cs",
+              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\StatForm\\StatForm.cs [Conception]",
+              "RelativeToolTip": "GestionDeStock\\StatForm\\StatForm.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T11:59:27.229Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginForm.cs [Conception]",
+              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\LoginForm\\LoginForm.cs",
+              "RelativeDocumentMoniker": "GestionDeStock\\LoginForm\\LoginForm.cs",
+              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\LoginForm\\LoginForm.cs [Conception]",
+              "RelativeToolTip": "GestionDeStock\\LoginForm\\LoginForm.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T11:01:07.154Z",
               "EditorCaption": " [Conception]"
             },
             {
@@ -266,32 +268,70 @@
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "ProductDetailsForm.cs",
-              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\ProductForm\\ProductDetailsForm.cs",
-              "RelativeDocumentMoniker": "GestionDeStock\\ProductForm\\ProductDetailsForm.cs",
-              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\ProductForm\\ProductDetailsForm.cs*",
-              "RelativeToolTip": "GestionDeStock\\ProductForm\\ProductDetailsForm.cs*",
-              "ViewState": "AgIAABIAAAAAAAAAAAAtwB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T11:28:18.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "ProductListForm.cs",
               "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\ProductForm\\ProductListForm.cs",
               "RelativeDocumentMoniker": "GestionDeStock\\ProductForm\\ProductListForm.cs",
               "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\ProductForm\\ProductListForm.cs",
               "RelativeToolTip": "GestionDeStock\\ProductForm\\ProductListForm.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAIA7wBUAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T11:13:48.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RegisterForm.Designer.cs",
+              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\LoginForm\\RegisterForm.Designer.cs",
+              "RelativeDocumentMoniker": "GestionDeStock\\LoginForm\\RegisterForm.Designer.cs",
+              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\LoginForm\\RegisterForm.Designer.cs",
+              "RelativeToolTip": "GestionDeStock\\LoginForm\\RegisterForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T10:54:44.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "RegisterForm.cs",
+              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\LoginForm\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "GestionDeStock\\LoginForm\\RegisterForm.cs",
+              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\LoginForm\\RegisterForm.cs",
+              "RelativeToolTip": "GestionDeStock\\LoginForm\\RegisterForm.cs",
+              "ViewState": "AgIAAP0AAAAAAAAAAAAqwBIBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T10:53:17.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DashboardForm.cs",
+              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\DashboardForm\\DashboardForm.cs",
+              "RelativeDocumentMoniker": "GestionDeStock\\DashboardForm\\DashboardForm.cs",
+              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\DashboardForm\\DashboardForm.cs",
+              "RelativeToolTip": "GestionDeStock\\DashboardForm\\DashboardForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T00:13:39.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProductDetailsForm.cs",
+              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\ProductForm\\ProductDetailsForm.cs",
+              "RelativeDocumentMoniker": "GestionDeStock\\ProductForm\\ProductDetailsForm.cs",
+              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\ProductForm\\ProductDetailsForm.cs",
+              "RelativeToolTip": "GestionDeStock\\ProductForm\\ProductDetailsForm.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAtwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T11:28:18.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Category Form.Designer.cs",
               "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\CategoryForm\\Category Form.Designer.cs",
               "RelativeDocumentMoniker": "GestionDeStock\\CategoryForm\\Category Form.Designer.cs",
@@ -304,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\LoginForm\\LoginForm.cs",
               "RelativeDocumentMoniker": "GestionDeStock\\LoginForm\\LoginForm.cs",
@@ -312,25 +352,11 @@
               "RelativeToolTip": "GestionDeStock\\LoginForm\\LoginForm.cs",
               "ViewState": "AgIAAAYBAAAAAAAAAAAAAAMBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T10:53:07.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T10:53:07.445Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "LoginForm.Designer.cs",
-              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\LoginForm\\LoginForm.Designer.cs",
-              "RelativeDocumentMoniker": "GestionDeStock\\LoginForm\\LoginForm.Designer.cs",
-              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\LoginForm\\LoginForm.Designer.cs",
-              "RelativeToolTip": "GestionDeStock\\LoginForm\\LoginForm.Designer.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAASwLYAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T11:00:35.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "MainForm.cs",
               "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\MainForm.cs",
               "RelativeDocumentMoniker": "GestionDeStock\\MainForm.cs",
@@ -343,7 +369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "GestionDeStock\\MainForm.Designer.cs",
@@ -355,18 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "MainForm.cs [Conception]",
-              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\MainForm.cs",
-              "RelativeDocumentMoniker": "GestionDeStock\\MainForm.cs",
-              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\MainForm.cs [Conception]",
-              "RelativeToolTip": "GestionDeStock\\MainForm.cs [Conception]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T21:25:04.597Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "ServiceCollectionExtensions.cs",
               "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\ServiceCollectionExtensions.cs",
               "RelativeDocumentMoniker": "GestionDeStock\\ServiceCollectionExtensions.cs",
@@ -378,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "ServiceCollectionExtensions.cs",
               "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock.Data\\ServiceCollectionExtensions.cs",
               "RelativeDocumentMoniker": "GestionDeStock.Data\\ServiceCollectionExtensions.cs",
@@ -390,7 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock.Data\\Entites\\User.cs",
               "RelativeDocumentMoniker": "GestionDeStock.Data\\Entites\\User.cs",
@@ -402,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock.Data\\Entites\\Category.cs",
               "RelativeDocumentMoniker": "GestionDeStock.Data\\Entites\\Category.cs",
@@ -414,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock.Data\\Entites\\Product.cs",
               "RelativeDocumentMoniker": "GestionDeStock.Data\\Entites\\Product.cs",
@@ -426,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "StockIn.cs",
               "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock.Data\\Entites\\StockIn.cs",
               "RelativeDocumentMoniker": "GestionDeStock.Data\\Entites\\StockIn.cs",
@@ -438,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "StockOut.cs",
               "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock.Data\\Entites\\StockOut.cs",
               "RelativeDocumentMoniker": "GestionDeStock.Data\\Entites\\StockOut.cs",
@@ -450,7 +465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "GestionDeStock.Data.csproj",
               "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock.Data\\GestionDeStock.Data.csproj",
               "RelativeDocumentMoniker": "GestionDeStock.Data\\GestionDeStock.Data.csproj",
@@ -462,7 +477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "GestionDeStock.csproj",
               "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\GestionDeStock.csproj",
               "RelativeDocumentMoniker": "GestionDeStock\\GestionDeStock.csproj",
@@ -471,6 +486,21 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-05-10T21:25:53.409Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MainForm.cs [Conception]",
+              "DocumentMoniker": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\MainForm.cs",
+              "RelativeDocumentMoniker": "GestionDeStock\\MainForm.cs",
+              "ToolTip": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock\\MainForm.cs [Conception]",
+              "RelativeToolTip": "GestionDeStock\\MainForm.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T21:25:04.597Z"
             }
           ]
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock.Data\\GestionDeStock.Data.csproj": {}
+    "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock.Data\\GestionDeStock.Data.csproj": {}
   },
   "projects": {
-    "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock.Data\\GestionDeStock.Data.csproj": {
+    "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock.Data\\GestionDeStock.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock.Data\\GestionDeStock.Data.csproj",
+        "projectUniqueName": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock.Data\\GestionDeStock.Data.csproj",
         "projectName": "GestionDeStock.Data",
-        "projectPath": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock.Data\\GestionDeStock.Data.csproj",
+        "projectPath": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock.Data\\GestionDeStock.Data.csproj",
         "packagesPath": "C:\\Users\\INFOKOM\\.nuget\\packages\\",
-        "outputPath": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock\\GestionDeStock.Data\\obj\\",
+        "outputPath": "D:\\Tp C_Sharp\\GestionDeStock\\GestionDeStock.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
