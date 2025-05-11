@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|c:\\users\\msi\\source\\repos\\gestiondestock\\gestiondestock\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|c:\\users\\msi\\source\\repos\\gestiondestock\\gestiondestock\\loginform\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\loginform\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|c:\\users\\msi\\source\\repos\\gestiondestock\\gestiondestock\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|c:\\users\\msi\\source\\repos\\gestiondestock\\gestiondestock\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|c:\\users\\msi\\source\\repos\\gestiondestock\\gestiondestock\\loginform\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|c:\\users\\msi\\source\\repos\\gestiondestock\\gestiondestock\\loginform\\loginform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\loginform\\loginform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|c:\\users\\msi\\source\\repos\\gestiondestock\\gestiondestock\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|solutionrelative:gestiondestock\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F77A5B0-CB61-45D4-94B7-EFF5D83650E3}|GestionDeStock\\GestionDeStock.csproj|c:\\users\\msi\\source\\repos\\gestiondestock\\gestiondestock\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
@@ -34,22 +38,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "GestionDeStock\\Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock\\Properties\\Resources.resx",
-              "RelativeToolTip": "GestionDeStock\\Properties\\Resources.resx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIcAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-05-11T02:36:02.248Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
@@ -76,6 +66,31 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "GestionDeStock\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock\\Properties\\Resources.resx",
+              "RelativeToolTip": "GestionDeStock\\Properties\\Resources.resx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-11T02:36:02.248Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterForm.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock\\LoginForm\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "GestionDeStock\\LoginForm\\RegisterForm.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock\\LoginForm\\RegisterForm.cs [Conception]",
+              "RelativeToolTip": "GestionDeStock\\LoginForm\\RegisterForm.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T03:06:05.596Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "LoginForm.resx",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock\\LoginForm\\LoginForm.resx",
@@ -94,14 +109,14 @@
               "RelativeDocumentMoniker": "GestionDeStock\\LoginForm\\LoginForm.Designer.cs",
               "ToolTip": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock\\LoginForm\\LoginForm.Designer.cs",
               "RelativeToolTip": "GestionDeStock\\LoginForm\\LoginForm.Designer.cs",
-              "ViewState": "AgIAAE4BAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T02:37:12.517Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LoginForm.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock\\LoginForm\\LoginForm.cs",
               "RelativeDocumentMoniker": "GestionDeStock\\LoginForm\\LoginForm.cs",
@@ -113,19 +128,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Resources.resx",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "GestionDeStock\\Properties\\Resources.resx",
               "ToolTip": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock\\Properties\\Resources.resx",
               "RelativeToolTip": "GestionDeStock\\Properties\\Resources.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-05-11T02:42:06.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T02:42:06.011Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "StockDbContext.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock.Data\\Context\\StockDbContext.cs",
               "RelativeDocumentMoniker": "GestionDeStock.Data\\Context\\StockDbContext.cs",
@@ -133,8 +147,7 @@
               "RelativeToolTip": "GestionDeStock.Data\\Context\\StockDbContext.cs",
               "ViewState": "AgIAAE8AAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T23:14:20.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T23:14:20.104Z"
             }
           ]
         }

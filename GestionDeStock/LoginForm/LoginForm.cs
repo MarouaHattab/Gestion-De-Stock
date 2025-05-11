@@ -97,42 +97,87 @@ namespace GestionDeStock.LoginForm
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text.Trim();
-            string password = txtPassword.Text;
-
-            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            // Disable the login button to prevent multiple clicks
+            btnLogin.Enabled = false;
+            
+            try
             {
-                MessageBox.Show("Please enter a username and password.", "Login Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                string username = txtUsername.Text.Trim();
+                string password = txtPassword.Text.Trim();
+
+                if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+                {
+                    MessageBox.Show("Please enter a username and password.", "Login Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Attempt to log in
+                AttemptLogin(username, password);
             }
-
-            // Check if user exists with matching credentials
-            var user = _dbContext.Users.FirstOrDefault(u =>
-                u.Username == username && u.Password == password);
-
-            if (user != null)
+            finally
             {
-                MessageBox.Show($"Welcome {username}!", "Login Successful",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                // TODO: Open the main form and close this one
-                // MainForm mainForm = new MainForm();
-                // mainForm.Show();
-                // this.Hide();
+                // Re-enable the login button
+                btnLogin.Enabled = true;
             }
-            else
+        }
+        
+        private void AttemptLogin(string username, string password)
+        {
+            try
             {
-                MessageBox.Show("Incorrect username or password.", "Login Failed",
+                // Log login attempt
+                System.Diagnostics.Debug.WriteLine($"Login attempt for username: '{username}'");
+                
+                // Force a fresh reload of users from database to avoid stale data
+                _dbContext.ChangeTracker.Clear();
+                
+                // Get all users for debugging
+                var allUsers = _dbContext.Users.AsNoTracking().ToList();
+                System.Diagnostics.Debug.WriteLine($"Total users in database: {allUsers.Count}");
+                foreach (var userItem in allUsers)
+                {
+                    System.Diagnostics.Debug.WriteLine($"User in DB: '{userItem.Username}', ID: {userItem.UserId}, IsAdmin: {userItem.IsAdmin}");
+                }
+                
+                // Check if user exists with matching credentials using the same approach as registration
+                var foundUser = allUsers.FirstOrDefault(u => 
+                    string.Equals(u.Username, username, StringComparison.OrdinalIgnoreCase) && 
+                    u.Password == password);
+
+                if (foundUser != null)
+                {
+                    System.Diagnostics.Debug.WriteLine($"Login successful for: '{username}' (ID: {foundUser.UserId}, IsAdmin: {foundUser.IsAdmin})");
+                    MessageBox.Show($"Welcome {username}!", "Login Successful",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // TODO: Open the main form and close this one
+                    // MainForm mainForm = new MainForm();
+                    // mainForm.Show();
+                    // this.Hide();
+                }
+                else
+                {
+                    System.Diagnostics.Debug.WriteLine($"Login failed for: '{username}'");
+                    MessageBox.Show("Incorrect username or password.", "Login Failed",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Error in login: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Stack trace: {ex.StackTrace}");
+                MessageBox.Show($"Login error: {ex.Message}", "Database Error", 
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void LnkCreateAccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // TODO: Implement account creation functionality
-            MessageBox.Show("The account creation functionality will be implemented here.",
-                "Create Account", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // Open registration form
+            RegisterForm registerForm = new RegisterForm();
+            registerForm.Show();
+            this.Hide();
         }
 
         private void pictureBoxUser_Click(object sender, EventArgs e)
@@ -187,7 +232,27 @@ namespace GestionDeStock.LoginForm
 
         private void lnkCreateAccount_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            // Open registration form as a dialog
+            using (RegisterForm registerForm = new RegisterForm())
+            {
+                this.Hide();
+                DialogResult result = registerForm.ShowDialog();
+                this.Show();
+                
+                // Clear password field when returning from registration
+                txtPassword.Clear();
+                
+                // If registration was successful, pre-fill the username
+                if (result == DialogResult.OK)
+                {
+                    // Try to get the last registered username from the form
+                    string lastUsername = registerForm.Tag as string;
+                    if (!string.IsNullOrEmpty(lastUsername))
+                    {
+                        txtUsername.Text = lastUsername;
+                    }
+                }
+            }
         }
     }
 }

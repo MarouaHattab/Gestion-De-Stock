@@ -125,3 +125,4 @@ C:\Users\MSI\source\repos\GestionDeStock\GestionDeStock\bin\Debug\net8.0-windows
 C:\Users\MSI\source\repos\GestionDeStock\GestionDeStock\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\MSI\source\repos\GestionDeStock\GestionDeStock\obj\Debug\net8.0-windows\GestionDeStock.LoginForm.LoginForm.resources
 C:\Users\MSI\source\repos\GestionDeStock\GestionDeStock\obj\Debug\net8.0-windows\GestionDeStock.Properties.Resources.resources
+C:\Users\MSI\source\repos\GestionDeStock\GestionDeStock\obj\Debug\net8.0-windows\GestionDeStock.LoginForm.RegisterForm.resources

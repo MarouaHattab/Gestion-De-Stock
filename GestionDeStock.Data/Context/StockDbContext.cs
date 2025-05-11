@@ -68,6 +68,10 @@ namespace GestionDeStock.Data.Context
             modelBuilder.Entity<User>()
                 .Property(u => u.Password)
                 .IsRequired();
+
+            modelBuilder.Entity<User>()
+                .Property(u => u.IsAdmin)
+                .HasDefaultValue(false);
         }
 
         public void Seed()
@@ -104,13 +108,22 @@ namespace GestionDeStock.Data.Context
                 SaveChanges();
             }
 
-            if (!Users.Any())
+            // Check for admin user and recreate if needed
+            var adminUser = Users.FirstOrDefault(u => u.Username == "admin");
+            if (adminUser == null)
             {
                 Users.Add(new User
                 {
                     Username = "admin",
-                    Password = "admin"
+                    Password = "admin",
+                    IsAdmin = true
                 });
+                SaveChanges();
+            }
+            else if (!adminUser.IsAdmin)
+            {
+                // Ensure admin user has admin privileges
+                adminUser.IsAdmin = true;
                 SaveChanges();
             }
         }
