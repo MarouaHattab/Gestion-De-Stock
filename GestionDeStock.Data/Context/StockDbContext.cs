@@ -68,11 +68,6 @@ namespace GestionDeStock.Data.Context
             modelBuilder.Entity<User>()
                 .Property(u => u.Password)
                 .IsRequired();
-
-            modelBuilder.Entity<User>()
-                .Property(u => u.Role)
-                .IsRequired()
-                .HasMaxLength(20);
         }
 
         public void Seed()
@@ -114,8 +109,7 @@ namespace GestionDeStock.Data.Context
                 Users.Add(new User
                 {
                     Username = "admin",
-                    Password = "admin",
-                    Role = "Admin"
+                    Password = "admin"
                 });
                 SaveChanges();
             }

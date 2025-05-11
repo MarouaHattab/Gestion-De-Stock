@@ -32,8 +32,7 @@ namespace GestionDeStock.Data.Migrations
                     UserId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Username = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false),
-                    Password = table.Column<string>(type: "TEXT", nullable: false),
-                    Role = table.Column<string>(type: "TEXT", maxLength: 20, nullable: false)
+                    Password = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

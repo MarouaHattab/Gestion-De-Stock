@@ -28,18 +28,32 @@ namespace GestionDeStock.Data
             {
                 var dbContext = scope.ServiceProvider.GetRequiredService<StockDbContext>();
                 
-                // Ensure database is created
-                dbContext.Database.EnsureCreated();
-                
-                // Apply pending migrations if any
-                var pendingMigrations = dbContext.Database.GetPendingMigrations();
-                if (pendingMigrations.Any())
+                try
                 {
-                    dbContext.Database.Migrate();
+                    // Check if database exists before trying to create it
+                    if (!dbContext.Database.CanConnect())
+                    {
+                        // Only create the database if it doesn't exist
+                        dbContext.Database.EnsureCreated();
+                        
+                        // Seed the database with initial data
+                        dbContext.Seed();
+                    }
+                    else
+                    {
+                        // For existing database, only apply pending migrations if any
+                        var pendingMigrations = dbContext.Database.GetPendingMigrations();
+                        if (pendingMigrations.Any())
+                        {
+                            dbContext.Database.Migrate();
+                        }
+                    }
                 }
-                
-                // Seed the database
-                dbContext.Seed();
+                catch (Exception ex)
+                {
+                    // Log or handle the exception
+                    System.Diagnostics.Debug.WriteLine($"Database initialization error: {ex.Message}");
+                }
             }
         }
     }

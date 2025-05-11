@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GestionDeStock.Data.Migrations
 {
     [DbContext(typeof(StockDbContext))]
-    [Migration("20250510225813_InitialCreate")]
+    [Migration("20250511022129_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -133,11 +133,6 @@ namespace GestionDeStock.Data.Migrations
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Role")
-                        .IsRequired()
-                        .HasMaxLength(20)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Username")

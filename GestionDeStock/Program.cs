@@ -31,11 +31,11 @@ namespace GestionDeStock
             // Construction du fournisseur de services qui gère les instances des dépendances
             ServiceProvider = services.BuildServiceProvider();
 
-            // Récupération de l'instance de la fenêtre principale via l'injection de dépendances
-            var mainForm = ServiceProvider.GetRequiredService<MainForm>();
+            // Récupération de l'instance de la fenêtre de login via l'injection de dépendances
+            var loginForm = ServiceProvider.GetRequiredService<LoginForm.LoginForm>();
 
-            // Démarrage de l'application avec la fenêtre principale
-            Application.Run(mainForm);
+            // Démarrage de l'application avec la fenêtre de login
+            Application.Run(loginForm);
         }
 
         private static void RegisterRepositories(IServiceCollection services)

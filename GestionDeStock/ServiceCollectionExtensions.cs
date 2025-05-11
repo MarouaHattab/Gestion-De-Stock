@@ -18,7 +18,7 @@ namespace GestionDeStock
             // Uncomment these as you create the forms
             
             // Register login form
-            // services.AddTransient<LoginForm.LoginForm>();
+            services.AddTransient<LoginForm.LoginForm>();
             
             // Register product forms
             // services.AddTransient<ProductForm.ProductsListForm>();
