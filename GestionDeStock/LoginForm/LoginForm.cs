@@ -16,7 +16,28 @@ namespace GestionDeStock.LoginForm
     public partial class LoginForm : Form
     {
         private readonly StockDbContext _dbContext;
+        private readonly IServiceProvider _serviceProvider;
 
+        public LoginForm(StockDbContext dbContext, IServiceProvider serviceProvider)
+        {
+            InitializeComponent();
+            _dbContext = dbContext;
+            _serviceProvider = serviceProvider;
+
+            // Set up event handlers
+            chkShowPassword.CheckedChanged += ChkShowPassword_CheckedChanged;
+            btnLogin.Click += BtnLogin_Click;
+            lnkCreateAccount.LinkClicked += LnkCreateAccount_LinkClicked;
+            this.Resize += LoginForm_Resize;
+
+            // Set default images if resources are missing
+            SetDefaultImages();
+
+            // Apply visual effects
+            ApplyVisualEffects();
+        }
+        
+        // Default constructor for DI
         public LoginForm()
         {
             InitializeComponent();
@@ -24,6 +45,7 @@ namespace GestionDeStock.LoginForm
             // Get the DbContext from the service provider
             var serviceProvider = Program.ServiceProvider;
             _dbContext = serviceProvider.GetRequiredService<StockDbContext>();
+            _serviceProvider = serviceProvider;
 
             // Set up event handlers
             chkShowPassword.CheckedChanged += ChkShowPassword_CheckedChanged;
@@ -151,10 +173,26 @@ namespace GestionDeStock.LoginForm
                     MessageBox.Show($"Welcome {username}!", "Login Successful",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    // TODO: Open the main form and close this one
-                    // MainForm mainForm = new MainForm();
-                    // mainForm.Show();
-                    // this.Hide();
+                    try
+                    {
+                        System.Diagnostics.Debug.WriteLine("Setting DialogResult.OK and closing login form...");
+                        
+                        // Set the DialogResult to OK to signal that login was successful
+                        // This will be used by the StockAppContext to transition to the dashboard
+                        this.DialogResult = DialogResult.OK;
+                        
+                        // Close the login form
+                        this.Close();
+                        
+                        System.Diagnostics.Debug.WriteLine("Login form closed with DialogResult.OK");
+                    }
+                    catch (Exception ex)
+                    {
+                        System.Diagnostics.Debug.WriteLine($"Error during login form transition: {ex.Message}");
+                        System.Diagnostics.Debug.WriteLine($"Stack trace: {ex.StackTrace}");
+                        MessageBox.Show($"Error transitioning to dashboard: {ex.Message}", "Navigation Error", 
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
@@ -174,10 +212,9 @@ namespace GestionDeStock.LoginForm
 
         private void LnkCreateAccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // Open registration form
-            RegisterForm registerForm = new RegisterForm();
-            registerForm.Show();
-            this.Hide();
+            // Registration not available for now
+            MessageBox.Show("Registration feature is currently disabled.", "Information", 
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void pictureBoxUser_Click(object sender, EventArgs e)
@@ -232,27 +269,9 @@ namespace GestionDeStock.LoginForm
 
         private void lnkCreateAccount_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // Open registration form as a dialog
-            using (RegisterForm registerForm = new RegisterForm())
-            {
-                this.Hide();
-                DialogResult result = registerForm.ShowDialog();
-                this.Show();
-                
-                // Clear password field when returning from registration
-                txtPassword.Clear();
-                
-                // If registration was successful, pre-fill the username
-                if (result == DialogResult.OK)
-                {
-                    // Try to get the last registered username from the form
-                    string lastUsername = registerForm.Tag as string;
-                    if (!string.IsNullOrEmpty(lastUsername))
-                    {
-                        txtUsername.Text = lastUsername;
-                    }
-                }
-            }
+            // Registration not available for now
+            MessageBox.Show("Registration feature is currently disabled.", "Information", 
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

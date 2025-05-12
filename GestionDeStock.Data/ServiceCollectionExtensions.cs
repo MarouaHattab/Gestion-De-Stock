@@ -51,8 +51,8 @@ namespace GestionDeStock.Data
                         try
                         {
                             // Try to get users to check if the schema is valid
-                            var userCount = dbContext.Users.Count();
-                            System.Diagnostics.Debug.WriteLine($"Existing database has {userCount} users");
+                            var initialUserCount = dbContext.Users.Count();
+                            System.Diagnostics.Debug.WriteLine($"Existing database has {initialUserCount} users");
                             
                             // Ensure admin user exists
                             dbContext.Seed();
@@ -91,8 +91,8 @@ namespace GestionDeStock.Data
                     System.Diagnostics.Debug.WriteLine($"Database connection string: {connection.ConnectionString}");
                     
                     // Log user count after initialization
-                    var userCount = dbContext.Users.Count();
-                    System.Diagnostics.Debug.WriteLine($"User count after initialization: {userCount}");
+                    var finalUserCount = dbContext.Users.Count();
+                    System.Diagnostics.Debug.WriteLine($"User count after initialization: {finalUserCount}");
                     foreach (var user in dbContext.Users)
                     {
                         System.Diagnostics.Debug.WriteLine($"User in DB: {user.Username}, IsAdmin: {user.IsAdmin}");

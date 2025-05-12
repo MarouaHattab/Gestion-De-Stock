@@ -1,9 +1,64 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using GestionDeStock.Data;
+using System.Windows.Forms;
 
 namespace GestionDeStock
 {
+    // Custom application context to manage form transitions
+    public class StockAppContext : ApplicationContext
+    {
+        private Form _currentForm;
+        private readonly IServiceProvider _serviceProvider;
+
+        public StockAppContext(IServiceProvider serviceProvider)
+        {
+            _serviceProvider = serviceProvider;
+            
+            // Start with the login form
+            ShowLoginForm();
+        }
+
+        private void ShowLoginForm()
+        {
+            // Create the login form
+            var loginForm = _serviceProvider.GetRequiredService<LoginForm.LoginForm>();
+            
+            // Set up the form closed event to handle transitions
+            loginForm.FormClosed += LoginForm_FormClosed;
+            
+            // Set as the current form and show it
+            _currentForm = loginForm;
+            _currentForm.Show();
+        }
+
+        private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // If the login form was closed with OK result, show the dashboard
+            if (((Form)sender).DialogResult == DialogResult.OK)
+            {
+                ShowDashboardForm();
+            }
+            else
+            {
+                // Otherwise exit the application
+                ExitThread();
+            }
+        }
+
+        private void ShowDashboardForm()
+        {
+            // Create and show the dashboard form
+            var dashboardForm = _serviceProvider.GetRequiredService<DashboardForm.DashboardForm>();
+            
+            // Don't exit application when dashboard closes - let forms handle their own navigation
+            
+            // Set and show
+            _currentForm = dashboardForm;
+            _currentForm.Show();
+        }
+    }
+
     public static class Program
     {
         public static IServiceProvider ServiceProvider { get; private set; }
@@ -31,11 +86,8 @@ namespace GestionDeStock
             // Construction du fournisseur de services qui gère les instances des dépendances
             ServiceProvider = services.BuildServiceProvider();
 
-            // Récupération de l'instance de la fenêtre de login via l'injection de dépendances
-            var loginForm = ServiceProvider.GetRequiredService<LoginForm.LoginForm>();
-
-            // Démarrage de l'application avec la fenêtre de login
-            Application.Run(loginForm);
+            // Use our custom application context to manage form transitions
+            Application.Run(new StockAppContext(ServiceProvider));
         }
 
         private static void RegisterRepositories(IServiceCollection services)
