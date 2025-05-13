@@ -36,6 +36,9 @@ namespace GestionDeStock.DashboardForm
             // Set the form name for finding it later
             this.Name = "DashboardForm";
             
+            // Set form to maximize on startup
+            this.WindowState = FormWindowState.Maximized;
+            
             // Add event handlers for responsiveness
             this.Load += DashboardForm_Load;
             this.Resize += DashboardForm_Resize;

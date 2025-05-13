@@ -67,14 +67,27 @@ namespace GestionDeStock
         ///  The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
+            // Check for command line arguments
+            bool shouldRecreateDatabase = args.Length > 0 && args[0].ToLower() == "--recreate-db";
+            
             // Initialisation de la configuration de l'application
             ApplicationConfiguration.Initialize();
 
             // Création d'une collection de services pour l'injection de dépendances
             var services = new ServiceCollection();
             services.AddGestionDeStockDataService();
+            
+            // If the recreate flag was provided, rebuild the database
+            if (shouldRecreateDatabase)
+            {
+                MessageBox.Show("Recreating database. All data will be lost!", "Database Recreation", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                GestionDeStock.Data.Context.StockDbContext.RecreateDatabase();
+            }
+            
+            // Apply migrations to ensure database is up to date
             services.ApplyMigrationsForGestionDeStockDataService();
 
             // Enregistrer les Forms
@@ -97,6 +110,7 @@ namespace GestionDeStock
             services.AddScoped<GestionDeStock.Data.Repositories.IStockMovementRepository, GestionDeStock.Data.Repositories.StockMovementRepository>();
             services.AddScoped<GestionDeStock.Data.Repositories.IUserRepository, GestionDeStock.Data.Repositories.UserRepository>();
             services.AddScoped<GestionDeStock.Data.Repositories.IStockInRepository, GestionDeStock.Data.Repositories.StockInRepository>();
+            services.AddScoped<GestionDeStock.Data.Repositories.IStockOutRepository, GestionDeStock.Data.Repositories.StockOutRepository>();
         }
     }
 }

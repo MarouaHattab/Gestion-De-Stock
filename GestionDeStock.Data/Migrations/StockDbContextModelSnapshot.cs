@@ -112,6 +112,9 @@ namespace GestionDeStock.Data.Migrations
                     b.Property<DateTime>("ExitDate")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Notes")
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("ProductId")
                         .HasColumnType("INTEGER");
 

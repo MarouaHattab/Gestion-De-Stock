@@ -27,7 +27,8 @@ namespace GestionDeStock
             // Register stock movement forms
             services.AddTransient<StockInForm.StockInForm>(provider => 
                 new StockInForm.StockInForm(provider));
-            services.AddTransient<StockOutForm.StockOutForm>();
+            services.AddTransient<StockOutForm.StockOutForm>(provider => 
+                new StockOutForm.StockOutForm(provider));
             
             // Register alert form
             services.AddTransient<AlertForm.AlertForm>(provider => 

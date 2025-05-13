@@ -5,11 +5,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace GestionDeStock.Data.Context
 {
     public class StockDbContext : DbContext
     {
+        public StockDbContext()
+        {
+        }
+
         public StockDbContext(DbContextOptions<StockDbContext> options) : base(options)
         {
         }
@@ -125,6 +130,40 @@ namespace GestionDeStock.Data.Context
                 // Ensure admin user has admin privileges
                 adminUser.IsAdmin = true;
                 SaveChanges();
+            }
+        }
+
+        // Method to recreate the database if needed
+        public static void RecreateDatabase()
+        {
+            try
+            {
+                // Get the path to the database file
+                string dbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "gestiondestock.db");
+                
+                // Create a temporary context to ensure we can connect
+                using (var tempContext = new StockDbContext())
+                {
+                    // Try to delete the database
+                    tempContext.Database.EnsureDeleted();
+                    
+                    // Create a new database
+                    tempContext.Database.EnsureCreated();
+                    
+                    // Seed the database with initial data
+                    tempContext.Seed();
+
+                    Console.WriteLine("Database has been recreated successfully.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error recreating database: {ex.Message}");
+                if (ex.InnerException != null)
+                {
+                    Console.WriteLine($"Inner exception: {ex.InnerException.Message}");
+                }
+                throw;
             }
         }
     }

@@ -106,5 +106,26 @@ namespace GestionDeStock.Data
                 }
             }
         }
+        
+        /// <summary>
+        /// Completely deletes and recreates the database - use with caution as all data will be lost
+        /// </summary>
+        public static void RecreateGestionDeStockDatabase()
+        {
+            try
+            {
+                // Use the method in StockDbContext to recreate the database
+                StockDbContext.RecreateDatabase();
+                Console.WriteLine("Database has been completely rebuilt.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error recreating database: {ex.Message}");
+                if (ex.InnerException != null)
+                {
+                    Console.WriteLine($"Inner exception: {ex.InnerException.Message}");
+                }
+            }
+        }
     }
 }

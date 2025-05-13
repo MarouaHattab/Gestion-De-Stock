@@ -119,8 +119,8 @@
             flowLayoutPanel1.Controls.Add(AddButton);
             flowLayoutPanel1.Controls.Add(UpdateButton);
             flowLayoutPanel1.Controls.Add(DeleteButton);
-            flowLayoutPanel1.Controls.Add(BackToDashboardButton);
             flowLayoutPanel1.Controls.Add(ReloadButton);
+            flowLayoutPanel1.Controls.Add(BackToDashboardButton);
             flowLayoutPanel1.Dock = DockStyle.Fill;
             flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel1.Location = new Point(13, 84);
@@ -213,13 +213,13 @@
             ReloadButton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ReloadButton.ForeColor = Color.White;
             ReloadButton.ImageAlign = ContentAlignment.MiddleLeft;
-            ReloadButton.Location = new Point(219, 14);
+            ReloadButton.Location = new Point(13, 142);
             ReloadButton.Margin = new Padding(3, 4, 3, 15);
             ReloadButton.Name = "ReloadButton";
             ReloadButton.Size = new Size(200, 45);
             ReloadButton.TabIndex = 3;
             ReloadButton.Text = "Reload";
-            ReloadButton.TextAlign = ContentAlignment.MiddleRight;
+            ReloadButton.TextAlign = ContentAlignment.MiddleCenter;
             ReloadButton.UseVisualStyleBackColor = false;
             ReloadButton.Click += ReloadButton_Click;
             // 
@@ -401,8 +401,9 @@
             notesTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             notesTextBox.Location = new Point(3, 213);
             notesTextBox.Multiline = true;
+            notesTextBox.MinimumSize = new Size(0, 40);
             notesTextBox.Name = "notesTextBox";
-            notesTextBox.Size = new Size(212, 10);
+            notesTextBox.Size = new Size(212, 40);
             notesTextBox.TabIndex = 9;
             // 
             // actionButtonsPanel

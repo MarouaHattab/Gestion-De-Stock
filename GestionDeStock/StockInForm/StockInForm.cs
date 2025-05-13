@@ -30,6 +30,9 @@ namespace GestionDeStock.StockInForm
             _stockInRepository = _serviceProvider.GetRequiredService<IStockInRepository>();
             _productRepository = _serviceProvider.GetRequiredService<IProductRepository>();
 
+            // Set form to maximize on startup
+            this.WindowState = FormWindowState.Maximized;
+
             // Set up DataGridView
             ConfigureDataGridView();
         }
