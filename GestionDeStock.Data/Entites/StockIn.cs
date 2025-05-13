@@ -13,6 +13,7 @@ namespace GestionDeStock.Data.Entites
         public int Quantity { get; set; }
         public DateTime EntryDate { get; set; }
         public string? Supplier { get; set; }
+        public string? Notes { get; set; }
 
         // Navigation
         public virtual Product Product { get; set; }

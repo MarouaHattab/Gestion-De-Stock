@@ -1,4 +1,5 @@
 ﻿using GestionDeStock.Data.Entites;
+using GestionDeStock.Data.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,11 @@ namespace GestionDeStock.DashboardForm
         private readonly Color accentColor = Color.FromArgb(97, 168, 237);
         private readonly Color textLightColor = Color.FromArgb(240, 240, 240);
         private readonly Color textDarkColor = Color.FromArgb(30, 30, 30);
+        
+        // Stock alert indicators
+        private Label alertBadge;
+        private int _zeroStockCount = 0;
+        private int _lowStockCount = 0;
 
         public DashboardForm(IServiceProvider serviceProvider)
         {
@@ -34,9 +40,44 @@ namespace GestionDeStock.DashboardForm
             this.Load += DashboardForm_Load;
             this.Resize += DashboardForm_Resize;
             this.SizeChanged += DashboardForm_SizeChanged;
+            
+            // Create notification badge for alerts
+            CreateAlertBadge();
         }
         
-        private void DashboardForm_Load(object sender, EventArgs e)
+        private void CreateAlertBadge()
+        {
+            // Create a notification badge for the alert button
+            alertBadge = new Label
+            {
+                Text = "0",
+                TextAlign = ContentAlignment.MiddleCenter,
+                ForeColor = Color.White,
+                BackColor = Color.FromArgb(220, 53, 69), // Red
+                Font = new Font("Segoe UI", 9, FontStyle.Bold),
+                Size = new Size(24, 24),
+                AutoSize = false,
+                Visible = false
+            };
+            
+            // Make it round
+            alertBadge.Paint += (sender, e) =>
+            {
+                Graphics g = e.Graphics;
+                g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                using (var path = new System.Drawing.Drawing2D.GraphicsPath())
+                {
+                    path.AddEllipse(0, 0, alertBadge.Width - 1, alertBadge.Height - 1);
+                    alertBadge.Region = new Region(path);
+                }
+            };
+            
+            // Add it to the form
+            this.Controls.Add(alertBadge);
+            alertBadge.BringToFront();
+        }
+        
+        private async void DashboardForm_Load(object sender, EventArgs e)
         {
             // Set initial form properties
             this.MinimumSize = new Size(800, 450);
@@ -46,6 +87,94 @@ namespace GestionDeStock.DashboardForm
             
             // Set initial layout
             AdjustControlsForResponsiveness();
+            
+            // Check for stock alerts
+            await CheckStockAlerts();
+        }
+        
+        private async Task CheckStockAlerts()
+        {
+            try
+            {
+                // Get the product repository from DI
+                var productRepo = _serviceProvider.GetRequiredService<IProductRepository>();
+                
+                // Get all products to check for zero stock
+                var allProducts = await productRepo.GetAllProductsAsync();
+                
+                // Count products with zero stock
+                _zeroStockCount = allProducts.Count(p => p.Quantity == 0);
+                
+                // Get products with stock below their AlertThreshold but not zero
+                var lowStockProducts = await productRepo.GetLowStockProductsAsync();
+                _lowStockCount = lowStockProducts.Count(p => p.Quantity > 0);
+                
+                // Update the alert badge
+                UpdateAlertBadge();
+            }
+            catch (Exception ex)
+            {
+                // Just log the error - don't show a message box as this is happening on load
+                System.Diagnostics.Debug.WriteLine($"Error checking stock alerts: {ex.Message}");
+            }
+        }
+        
+        private void UpdateAlertBadge()
+        {
+            // Calculate total alerts
+            int totalAlerts = _zeroStockCount + _lowStockCount;
+            
+            if (totalAlerts > 0)
+            {
+                // Update badge text
+                alertBadge.Text = totalAlerts > 99 ? "99+" : totalAlerts.ToString();
+                
+                // Show the badge
+                alertBadge.Visible = true;
+                
+                // Change badge color based on severity
+                if (_zeroStockCount > 0)
+                {
+                    alertBadge.BackColor = Color.FromArgb(220, 53, 69); // Red for out of stock
+                }
+                else
+                {
+                    alertBadge.BackColor = Color.FromArgb(255, 193, 7); // Yellow for low stock
+                }
+                
+                // Update alert button text
+                if (_zeroStockCount > 0)
+                {
+                    AlertButton.Text = "⚠️ Alert";
+                    AlertButton.ForeColor = Color.FromArgb(220, 53, 69);
+                }
+                else
+                {
+                    AlertButton.Text = "Alert";
+                    AlertButton.ForeColor = textLightColor;
+                }
+            }
+            else
+            {
+                // No alerts - hide the badge
+                alertBadge.Visible = false;
+                AlertButton.Text = "Alert";
+                AlertButton.ForeColor = textLightColor;
+            }
+            
+            // Position the badge
+            PositionAlertBadge();
+        }
+        
+        private void PositionAlertBadge()
+        {
+            if (AlertButton != null && alertBadge != null)
+            {
+                // Calculate position on top right of the AlertButton
+                alertBadge.Left = AlertButton.Right - 30;
+                alertBadge.Top = AlertButton.Top + 10;
+                alertBadge.BringToFront();
+            }
         }
         
         private void ApplyModernStyling()
@@ -144,6 +273,9 @@ namespace GestionDeStock.DashboardForm
                 {
                     AddButtonShadowEffects(2);
                 }
+                
+                // Update alert badge position
+                PositionAlertBadge();
                 
                 // Refresh layout
                 tableLayoutPanel1.PerformLayout();

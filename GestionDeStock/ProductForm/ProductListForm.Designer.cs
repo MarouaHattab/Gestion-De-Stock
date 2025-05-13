@@ -258,6 +258,7 @@
             alertThresholdDataGridViewTextBoxColumn.MinimumWidth = 120;
             alertThresholdDataGridViewTextBoxColumn.Name = "alertThresholdDataGridViewTextBoxColumn";
             alertThresholdDataGridViewTextBoxColumn.ReadOnly = true;
+            alertThresholdDataGridViewTextBoxColumn.Visible = true;
             // 
             // descriptionDataGridViewTextBoxColumn
             // 

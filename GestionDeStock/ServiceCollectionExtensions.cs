@@ -29,7 +29,8 @@ namespace GestionDeStock
             services.AddTransient<StockOutForm.StockOutForm>();
             
             // Register alert form
-            services.AddTransient<AlertForm.AlertForm>();
+            services.AddTransient<AlertForm.AlertForm>(provider => 
+                new AlertForm.AlertForm(provider));
             
             // Register statistics form
             services.AddTransient<StatForm.StatForm>();

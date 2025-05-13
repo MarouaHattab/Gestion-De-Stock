@@ -34,6 +34,7 @@ namespace GestionDeStock.ProductForm
             if (_product.ProductId == 0 && _product.CategoryId == 0)
             {
                 _product.CategoryId = 1; // Default to first category or appropriate default
+                _product.AlertThreshold = 5; // Set a default value for AlertThreshold
             }
             
             // Update this to avoid binding issues
@@ -150,6 +151,10 @@ namespace GestionDeStock.ProductForm
 
             textBox5.DataBindings.Clear();
             textBox5.DataBindings.Add("Text", productBindingSource, "AlertThreshold", true, DataSourceUpdateMode.OnPropertyChanged);
+            // Make sure the AlertThreshold field is visible and properly labeled
+            label5.Text = "Alert Threshold:";
+            label5.Visible = true;
+            textBox5.Visible = true;
 
             textBox6.DataBindings.Clear();
             textBox6.DataBindings.Add("Text", productBindingSource, "Description", true, DataSourceUpdateMode.OnPropertyChanged);
@@ -177,7 +182,7 @@ namespace GestionDeStock.ProductForm
             // Validate inputs before accepting
             if (string.IsNullOrWhiteSpace(textBox1.Text))
             {
-                MessageBox.Show("Le nom du produit est obligatoire.", "Erreur de validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Product name is required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBox1.Focus();
                 return;
             }
@@ -185,7 +190,7 @@ namespace GestionDeStock.ProductForm
             int quantity;
             if (!int.TryParse(textBox2.Text, out quantity) || quantity < 0)
             {
-                MessageBox.Show("La quantité doit être un nombre entier positif.", "Erreur de validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Quantity must be a positive integer.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBox2.Focus();
                 return;
             }
@@ -193,7 +198,7 @@ namespace GestionDeStock.ProductForm
             decimal purchasePrice;
             if (!decimal.TryParse(textBox3.Text, out purchasePrice) || purchasePrice < 0)
             {
-                MessageBox.Show("Le prix d'achat doit être un nombre décimal positif.", "Erreur de validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Purchase price must be a positive decimal.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBox3.Focus();
                 return;
             }
@@ -201,15 +206,16 @@ namespace GestionDeStock.ProductForm
             decimal salePrice;
             if (!decimal.TryParse(textBox4.Text, out salePrice) || salePrice < 0)
             {
-                MessageBox.Show("Le prix de vente doit être un nombre décimal positif.", "Erreur de validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Sale price must be a positive decimal.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBox4.Focus();
                 return;
             }
 
+            // Validate AlertThreshold
             int alertThreshold;
             if (!int.TryParse(textBox5.Text, out alertThreshold) || alertThreshold < 0)
             {
-                MessageBox.Show("Le seuil d'alerte doit être un nombre entier positif.", "Erreur de validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Alert threshold must be a positive integer.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBox5.Focus();
                 return;
             }
@@ -217,7 +223,7 @@ namespace GestionDeStock.ProductForm
             // Validate category is selected if using combo box
             if (categoryComboBox != null && categoryComboBox.SelectedItem == null)
             {
-                MessageBox.Show("Veuillez sélectionner une catégorie.", "Erreur de validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please select a category.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 categoryComboBox.Focus();
                 return;
             }

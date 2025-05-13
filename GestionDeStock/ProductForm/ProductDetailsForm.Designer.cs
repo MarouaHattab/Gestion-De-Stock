@@ -267,7 +267,7 @@
             // textBox5
             // 
             textBox5.BorderStyle = BorderStyle.FixedSingle;
-            textBox5.DataBindings.Add(new Binding("Text", productBindingSource, "AlertThreshold", true));
+            textBox5.DataBindings.Add(new Binding("Text", productBindingSource, "AlertThreshold", true, DataSourceUpdateMode.OnPropertyChanged));
             textBox5.Dock = DockStyle.Fill;
             textBox5.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox5.Location = new Point(170, 204);
@@ -275,6 +275,7 @@
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(665, 30);
             textBox5.TabIndex = 4;
+            textBox5.Visible = false;
             // 
             // textBox6
             // 
@@ -326,14 +327,13 @@
             // 
             // label5
             // 
-            label5.AutoSize = true;
             label5.Dock = DockStyle.Fill;
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(3, 200);
+            label5.Location = new Point(3, 204);
             label5.Name = "label5";
             label5.Size = new Size(161, 50);
             label5.TabIndex = 10;
-            label5.Text = "Alert Threshold";
+            label5.Text = "Alert Threshold:";
             label5.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label6
