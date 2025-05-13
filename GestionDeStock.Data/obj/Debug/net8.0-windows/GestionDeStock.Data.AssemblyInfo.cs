@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestionDeStock.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dedf0cfc72bbce7fb0a6f0836252870005827543")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c207d0fb62b9a42e4bb9b93ccc9ac6bea0c3c7c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("GestionDeStock.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestionDeStock.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
