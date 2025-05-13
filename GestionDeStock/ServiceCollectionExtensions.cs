@@ -35,7 +35,10 @@ namespace GestionDeStock
                 new AlertForm.AlertForm(provider));
             
             // Register statistics form
-            services.AddTransient<StatForm.StatForm>();
+            services.AddTransient<StatForm.StatForm>(provider => 
+                new StatForm.StatForm(provider.GetRequiredService<GestionDeStock.Data.Context.StockDbContext>()) { 
+                    _serviceProvider = provider 
+                });
             
             // Register main form (now unused since we start with LoginForm)
             services.AddTransient<MainForm>();
