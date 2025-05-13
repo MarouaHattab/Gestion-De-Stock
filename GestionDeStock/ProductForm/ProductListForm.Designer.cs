@@ -189,9 +189,7 @@
             // 
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.BackgroundColor = Color.White;
             dataGridView1.BorderStyle = BorderStyle.None;
@@ -199,6 +197,7 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { nameDataGridViewTextBoxColumn, quantityDataGridViewTextBoxColumn, purchasePriceDataGridViewTextBoxColumn, salePriceDataGridViewTextBoxColumn, alertThresholdDataGridViewTextBoxColumn, descriptionDataGridViewTextBoxColumn, categoryDataGridViewTextBoxColumn });
             dataGridView1.DataSource = productBindingSource;
+            dataGridView1.Dock = DockStyle.Fill;
             dataGridView1.GridColor = Color.FromArgb(230, 230, 230);
             dataGridView1.Location = new Point(247, 84);
             dataGridView1.Margin = new Padding(10, 4, 3, 4);
@@ -317,7 +316,7 @@
             ClientSize = new Size(914, 600);
             Controls.Add(tableLayoutPanel1);
             Margin = new Padding(3, 4, 3, 4);
-            MinimumSize = new Size(700, 500);
+            MinimumSize = new Size(900, 600);
             Name = "ProductListForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Products Management";

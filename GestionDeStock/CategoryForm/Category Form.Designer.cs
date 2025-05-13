@@ -260,7 +260,7 @@
             ClientSize = new Size(914, 600);
             Controls.Add(tableLayoutPanel1);
             Margin = new Padding(3, 4, 3, 4);
-            MinimumSize = new Size(700, 500);
+            MinimumSize = new Size(900, 600);
             Name = "Category_Form";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Categories Management";

@@ -335,7 +335,7 @@
             BackColor = Color.White;
             ClientSize = new Size(914, 600);
             Controls.Add(tableLayoutPanel1);
-            MinimumSize = new Size(800, 600);
+            MinimumSize = new Size(900, 600);
             Name = "AlertForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Notification Center";

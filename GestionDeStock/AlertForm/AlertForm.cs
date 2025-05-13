@@ -26,6 +26,10 @@ namespace GestionDeStock.AlertForm
         {
             InitializeComponent();
             _serviceProvider = serviceProvider;
+            _productRepository = _serviceProvider.GetRequiredService<IProductRepository>();
+            
+            // Set form to maximize on startup
+            this.WindowState = FormWindowState.Maximized;
             
             // Set up the DataGridView for category name display
             zeroStockDataGridView.CellFormatting += DataGridView_CellFormatting;

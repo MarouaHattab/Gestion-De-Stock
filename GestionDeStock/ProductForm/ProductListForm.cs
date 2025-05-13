@@ -18,10 +18,12 @@ namespace GestionDeStock.ProductForm
     {
         private readonly IServiceProvider _serviceProvider;
         private Dictionary<int, string> _categoryNameMap = new Dictionary<int, string>();
+        private readonly IProductRepository _productRepository;
         
         public ProductListForm(IServiceProvider serviceProvider)
         {
             _serviceProvider = serviceProvider;
+            _productRepository = _serviceProvider.GetRequiredService<IProductRepository>();
             InitializeComponent();
             
             // Set up DataGridView for category name display
@@ -29,6 +31,9 @@ namespace GestionDeStock.ProductForm
             
             // Register Load event to initialize data
             this.Load += ProductListForm_Load;
+            
+            // Set form to maximize on startup
+            this.WindowState = FormWindowState.Maximized;
         }
         
         private void DataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)

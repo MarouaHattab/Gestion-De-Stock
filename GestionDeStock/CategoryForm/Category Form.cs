@@ -62,6 +62,9 @@ namespace GestionDeStock.CategoryForm
             // Set form properties
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormClosing += Category_Form_FormClosing;
+            
+            // Set form to maximize on startup
+            this.WindowState = FormWindowState.Maximized;
         }
         
         private void Category_Form_FormClosing(object sender, FormClosingEventArgs e)
