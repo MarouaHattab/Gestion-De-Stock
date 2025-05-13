@@ -16,7 +16,7 @@ namespace GestionDeStock.Data.Entites
         public string? Notes { get; set; }
 
         // Navigation
-        public virtual Product Product { get; set; }
+        public virtual Product? Product { get; set; }
     }
 
 }

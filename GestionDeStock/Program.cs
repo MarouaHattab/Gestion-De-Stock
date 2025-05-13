@@ -96,7 +96,7 @@ namespace GestionDeStock
             services.AddScoped<GestionDeStock.Data.Repositories.ICategoryRepository, GestionDeStock.Data.Repositories.CategoryRepository>();
             services.AddScoped<GestionDeStock.Data.Repositories.IStockMovementRepository, GestionDeStock.Data.Repositories.StockMovementRepository>();
             services.AddScoped<GestionDeStock.Data.Repositories.IUserRepository, GestionDeStock.Data.Repositories.UserRepository>();
-            
+            services.AddScoped<GestionDeStock.Data.Repositories.IStockInRepository, GestionDeStock.Data.Repositories.StockInRepository>();
         }
     }
 }
