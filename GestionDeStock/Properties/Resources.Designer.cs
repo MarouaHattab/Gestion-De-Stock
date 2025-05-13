@@ -83,6 +83,16 @@ namespace GestionDeStock.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancel_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("cancel-icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap categories {
             get {
                 object obj = ResourceManager.GetObject("categories", resourceCulture);
@@ -116,6 +126,16 @@ namespace GestionDeStock.Properties {
         internal static System.Drawing.Bitmap shopping_store {
             get {
                 object obj = ResourceManager.GetObject("shopping-store", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tick_icon {
+            get {
+                object obj = ResourceManager.GetObject("tick-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

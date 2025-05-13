@@ -2570,11 +2570,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock.Data\\GestionDeStock.Data.csproj",
+      "projectUniqueName": "C:\\Users\\MSI\\Desktop\\Gestion-De-Stock\\GestionDeStock.Data\\GestionDeStock.Data.csproj",
       "projectName": "GestionDeStock.Data",
-      "projectPath": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock.Data\\GestionDeStock.Data.csproj",
+      "projectPath": "C:\\Users\\MSI\\Desktop\\Gestion-De-Stock\\GestionDeStock.Data\\GestionDeStock.Data.csproj",
       "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MSI\\source\\repos\\GestionDeStock\\GestionDeStock.Data\\obj\\",
+      "outputPath": "C:\\Users\\MSI\\Desktop\\Gestion-De-Stock\\GestionDeStock.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

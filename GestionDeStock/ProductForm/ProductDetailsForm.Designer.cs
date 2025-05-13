@@ -31,9 +31,10 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductDetailsForm));
             tableLayoutPanel1 = new TableLayoutPanel();
+            ProductDetailsFormbutton = new Button();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            buttonOK = new Button();
             buttonCancel = new Button();
+            buttonOK = new Button();
             Product = new GroupBox();
             tableLayoutPanel2 = new TableLayoutPanel();
             textBox7 = new TextBox();
@@ -51,7 +52,6 @@
             label6 = new Label();
             label2 = new Label();
             label7 = new Label();
-            ProductDetailsFormbutton = new Button();
             tableLayoutPanel1.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             Product.SuspendLayout();
@@ -63,73 +63,112 @@
             // 
             tableLayoutPanel1.ColumnCount = 1;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Controls.Add(ProductDetailsFormbutton, 0, 0);
             tableLayoutPanel1.Controls.Add(flowLayoutPanel1, 0, 2);
             tableLayoutPanel1.Controls.Add(Product, 0, 1);
-            tableLayoutPanel1.Controls.Add(ProductDetailsFormbutton, 0, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Margin = new Padding(3, 4, 3, 4);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.Padding = new Padding(15);
             tableLayoutPanel1.RowCount = 3;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 13.7931023F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 72.0306549F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 14.1762409F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 70F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 70F));
             tableLayoutPanel1.Size = new Size(914, 600);
             tableLayoutPanel1.TabIndex = 0;
             // 
+            // ProductDetailsFormbutton
+            // 
+            ProductDetailsFormbutton.BackColor = Color.FromArgb(0, 122, 204);
+            ProductDetailsFormbutton.Dock = DockStyle.Fill;
+            ProductDetailsFormbutton.FlatAppearance.BorderSize = 0;
+            ProductDetailsFormbutton.FlatStyle = FlatStyle.Flat;
+            ProductDetailsFormbutton.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ProductDetailsFormbutton.ForeColor = Color.White;
+            ProductDetailsFormbutton.Image = (Image)resources.GetObject("ProductDetailsFormbutton.Image");
+            ProductDetailsFormbutton.ImageAlign = ContentAlignment.MiddleLeft;
+            ProductDetailsFormbutton.Location = new Point(18, 18);
+            ProductDetailsFormbutton.Name = "ProductDetailsFormbutton";
+            ProductDetailsFormbutton.Padding = new Padding(10, 0, 0, 0);
+            ProductDetailsFormbutton.Size = new Size(878, 64);
+            ProductDetailsFormbutton.TabIndex = 4;
+            ProductDetailsFormbutton.Text = "Product Details";
+            ProductDetailsFormbutton.TextAlign = ContentAlignment.MiddleLeft;
+            ProductDetailsFormbutton.TextImageRelation = TextImageRelation.ImageBeforeText;
+            ProductDetailsFormbutton.UseVisualStyleBackColor = false;
+            // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.Controls.Add(buttonOK);
+            flowLayoutPanel1.BackColor = Color.FromArgb(248, 249, 250);
             flowLayoutPanel1.Controls.Add(buttonCancel);
+            flowLayoutPanel1.Controls.Add(buttonOK);
             flowLayoutPanel1.Dock = DockStyle.Fill;
             flowLayoutPanel1.FlowDirection = FlowDirection.RightToLeft;
-            flowLayoutPanel1.Location = new Point(3, 517);
+            flowLayoutPanel1.Location = new Point(18, 518);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(908, 80);
+            flowLayoutPanel1.Padding = new Padding(10);
+            flowLayoutPanel1.Size = new Size(878, 64);
             flowLayoutPanel1.TabIndex = 3;
-            // 
-            // buttonOK
-            // 
-            buttonOK.AutoSize = true;
-            buttonOK.DialogResult = DialogResult.OK;
-            buttonOK.Font = new Font("Segoe UI", 9.07563F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonOK.Image = (Image)resources.GetObject("buttonOK.Image");
-            buttonOK.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonOK.Location = new Point(766, 3);
-            buttonOK.MinimumSize = new Size(0, 59);
-            buttonOK.Name = "buttonOK";
-            buttonOK.Size = new Size(139, 72);
-            buttonOK.TabIndex = 1;
-            buttonOK.Text = "Valider";
-            buttonOK.TextImageRelation = TextImageRelation.ImageBeforeText;
-            buttonOK.UseVisualStyleBackColor = true;
             // 
             // buttonCancel
             // 
             buttonCancel.AutoSize = true;
+            buttonCancel.BackColor = Color.FromArgb(220, 53, 69);
             buttonCancel.DialogResult = DialogResult.Cancel;
-            buttonCancel.Font = new Font("Segoe UI", 9.07563F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonCancel.Image = (Image)resources.GetObject("buttonCancel.Image");
+            buttonCancel.FlatAppearance.BorderSize = 0;
+            buttonCancel.FlatStyle = FlatStyle.Flat;
+            buttonCancel.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonCancel.ForeColor = Color.White;
+            buttonCancel.Image = Properties.Resources.cancel_icon1;
             buttonCancel.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonCancel.Location = new Point(613, 3);
-            buttonCancel.MinimumSize = new Size(0, 59);
+            buttonCancel.Location = new Point(735, 12);
+            buttonCancel.Margin = new Padding(3, 2, 3, 2);
+            buttonCancel.MinimumSize = new Size(0, 44);
             buttonCancel.Name = "buttonCancel";
-            buttonCancel.Size = new Size(147, 72);
+            buttonCancel.Size = new Size(120, 54);
             buttonCancel.TabIndex = 2;
-            buttonCancel.Text = "Annuler";
+            buttonCancel.Text = "Cancel";
             buttonCancel.TextImageRelation = TextImageRelation.ImageBeforeText;
-            buttonCancel.UseVisualStyleBackColor = true;
+            buttonCancel.UseVisualStyleBackColor = false;
+            buttonCancel.Click += buttonCancel_Click;
+            // 
+            // buttonOK
+            // 
+            buttonOK.AutoSize = true;
+            buttonOK.BackColor = Color.FromArgb(40, 167, 69);
+            buttonOK.FlatAppearance.BorderSize = 0;
+            buttonOK.FlatStyle = FlatStyle.Flat;
+            buttonOK.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonOK.ForeColor = Color.White;
+            buttonOK.Image = Properties.Resources.tick_icon;
+            buttonOK.ImageAlign = ContentAlignment.MiddleLeft;
+            buttonOK.Location = new Point(617, 12);
+            buttonOK.Margin = new Padding(3, 2, 10, 2);
+            buttonOK.MinimumSize = new Size(0, 44);
+            buttonOK.Name = "buttonOK";
+            buttonOK.Size = new Size(105, 54);
+            buttonOK.TabIndex = 1;
+            buttonOK.Text = "Save";
+            buttonOK.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonOK.UseVisualStyleBackColor = false;
+            buttonOK.Click += buttonOK_Click;
             // 
             // Product
             // 
             Product.Controls.Add(tableLayoutPanel2);
             Product.Dock = DockStyle.Fill;
-            Product.Location = new Point(3, 85);
+            Product.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Product.ForeColor = Color.FromArgb(45, 52, 64);
+            Product.Location = new Point(18, 90);
+            Product.Margin = new Padding(3, 5, 3, 5);
             Product.Name = "Product";
-            Product.Size = new Size(908, 426);
+            Product.Padding = new Padding(20);
+            Product.Size = new Size(878, 420);
             Product.TabIndex = 2;
             Product.TabStop = false;
-            Product.Text = "Product";
+            Product.Text = "Product Information";
+            Product.Enter += Product_Enter;
             // 
             // tableLayoutPanel2
             // 
@@ -150,179 +189,207 @@
             tableLayoutPanel2.Controls.Add(label6, 0, 5);
             tableLayoutPanel2.Controls.Add(label2, 0, 1);
             tableLayoutPanel2.Controls.Add(label7, 0, 6);
-            tableLayoutPanel2.Location = new Point(101, 28);
+            tableLayoutPanel2.Dock = DockStyle.Fill;
+            tableLayoutPanel2.Location = new Point(20, 44);
             tableLayoutPanel2.Margin = new Padding(3, 4, 3, 4);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 7;
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 16.6666679F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 16.6666679F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 16.6666679F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 16.6666679F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 16.6666679F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 16.6666679F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 45F));
-            tableLayoutPanel2.Size = new Size(711, 383);
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 14.28F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 14.28F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 14.28F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 14.28F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 14.28F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 14.28F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 14.32F));
+            tableLayoutPanel2.Size = new Size(838, 356);
             tableLayoutPanel2.TabIndex = 0;
             tableLayoutPanel2.Paint += tableLayoutPanel2_Paint;
             // 
             // textBox7
             // 
-            textBox7.DataBindings.Add(new Binding("Tag", productBindingSource, "Category", true));
+            textBox7.DataBindings.Add(new Binding("Text", productBindingSource, "CategoryId", true));
             textBox7.Dock = DockStyle.Fill;
-            textBox7.Location = new Point(145, 340);
+            textBox7.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox7.Location = new Point(170, 304);
             textBox7.Margin = new Padding(3, 4, 3, 4);
             textBox7.Name = "textBox7";
-            textBox7.Size = new Size(563, 27);
+            textBox7.Size = new Size(665, 30);
             textBox7.TabIndex = 13;
             // 
             // textBox1
             // 
-            textBox1.DataBindings.Add(new Binding("Tag", productBindingSource, "Name", true));
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
+            textBox1.DataBindings.Add(new Binding("Text", productBindingSource, "Name", true));
             textBox1.Dock = DockStyle.Fill;
-            textBox1.Location = new Point(145, 4);
+            textBox1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(170, 4);
             textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(563, 27);
+            textBox1.Size = new Size(665, 30);
             textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            textBox2.DataBindings.Add(new Binding("Tag", productBindingSource, "Quantity", true));
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
+            textBox2.DataBindings.Add(new Binding("Text", productBindingSource, "Quantity", true));
             textBox2.Dock = DockStyle.Fill;
-            textBox2.Location = new Point(145, 60);
+            textBox2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox2.Location = new Point(170, 54);
             textBox2.Margin = new Padding(3, 4, 3, 4);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(563, 27);
+            textBox2.Size = new Size(665, 30);
             textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
-            textBox3.DataBindings.Add(new Binding("Tag", productBindingSource, "PurchasePrice", true));
+            textBox3.BorderStyle = BorderStyle.FixedSingle;
+            textBox3.DataBindings.Add(new Binding("Text", productBindingSource, "PurchasePrice", true));
             textBox3.Dock = DockStyle.Fill;
-            textBox3.Location = new Point(145, 116);
+            textBox3.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox3.Location = new Point(170, 104);
             textBox3.Margin = new Padding(3, 4, 3, 4);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(563, 27);
+            textBox3.Size = new Size(665, 30);
             textBox3.TabIndex = 2;
             // 
             // textBox4
             // 
-            textBox4.DataBindings.Add(new Binding("Tag", productBindingSource, "SalePrice", true));
+            textBox4.BorderStyle = BorderStyle.FixedSingle;
+            textBox4.DataBindings.Add(new Binding("Text", productBindingSource, "SalePrice", true));
             textBox4.Dock = DockStyle.Fill;
-            textBox4.Location = new Point(145, 172);
+            textBox4.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox4.Location = new Point(170, 154);
             textBox4.Margin = new Padding(3, 4, 3, 4);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(563, 27);
+            textBox4.Size = new Size(665, 30);
             textBox4.TabIndex = 3;
             // 
             // textBox5
             // 
-            textBox5.DataBindings.Add(new Binding("Tag", productBindingSource, "AlertThreshold", true));
+            textBox5.BorderStyle = BorderStyle.FixedSingle;
+            textBox5.DataBindings.Add(new Binding("Text", productBindingSource, "AlertThreshold", true));
             textBox5.Dock = DockStyle.Fill;
-            textBox5.Location = new Point(145, 228);
+            textBox5.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox5.Location = new Point(170, 204);
             textBox5.Margin = new Padding(3, 4, 3, 4);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(563, 27);
+            textBox5.Size = new Size(665, 30);
             textBox5.TabIndex = 4;
             // 
             // textBox6
             // 
-            textBox6.DataBindings.Add(new Binding("Tag", productBindingSource, "Description", true));
+            textBox6.BorderStyle = BorderStyle.FixedSingle;
+            textBox6.DataBindings.Add(new Binding("Text", productBindingSource, "Description", true));
             textBox6.Dock = DockStyle.Fill;
-            textBox6.Location = new Point(145, 284);
+            textBox6.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox6.Location = new Point(170, 254);
             textBox6.Margin = new Padding(3, 4, 3, 4);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(563, 27);
+            textBox6.Size = new Size(665, 30);
             textBox6.TabIndex = 5;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Dock = DockStyle.Fill;
+            label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(3, 0);
             label1.Name = "label1";
-            label1.Size = new Size(136, 56);
+            label1.Size = new Size(161, 50);
             label1.TabIndex = 6;
             label1.Text = "Name";
+            label1.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(3, 112);
+            label3.Dock = DockStyle.Fill;
+            label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(3, 100);
             label3.Name = "label3";
-            label3.Size = new Size(99, 20);
+            label3.Size = new Size(161, 50);
             label3.TabIndex = 8;
-            label3.Text = "PurchasePrice";
+            label3.Text = "Purchase Price";
+            label3.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(3, 168);
+            label4.Dock = DockStyle.Fill;
+            label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(3, 150);
             label4.Name = "label4";
-            label4.Size = new Size(69, 20);
+            label4.Size = new Size(161, 50);
             label4.TabIndex = 9;
-            label4.Text = "SalePrice";
+            label4.Text = "Sale Price";
+            label4.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(3, 224);
+            label5.Dock = DockStyle.Fill;
+            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Location = new Point(3, 200);
             label5.Name = "label5";
-            label5.Size = new Size(106, 20);
+            label5.Size = new Size(161, 50);
             label5.TabIndex = 10;
-            label5.Text = "AlertThreshold";
+            label5.Text = "Alert Threshold";
+            label5.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(3, 280);
+            label6.Dock = DockStyle.Fill;
+            label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(3, 250);
             label6.Name = "label6";
-            label6.Size = new Size(85, 20);
+            label6.Size = new Size(161, 50);
             label6.TabIndex = 11;
             label6.Text = "Description";
+            label6.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(3, 56);
+            label2.Dock = DockStyle.Fill;
+            label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(3, 50);
             label2.Name = "label2";
-            label2.Size = new Size(65, 20);
+            label2.Size = new Size(161, 50);
             label2.TabIndex = 7;
             label2.Text = "Quantity";
+            label2.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(3, 336);
+            label7.Dock = DockStyle.Fill;
+            label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.Location = new Point(3, 300);
             label7.Name = "label7";
-            label7.Size = new Size(69, 20);
+            label7.Size = new Size(161, 56);
             label7.TabIndex = 12;
             label7.Text = "Category";
-            // 
-            // ProductDetailsFormbutton
-            // 
-            ProductDetailsFormbutton.Dock = DockStyle.Fill;
-            ProductDetailsFormbutton.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ProductDetailsFormbutton.ForeColor = SystemColors.Highlight;
-            ProductDetailsFormbutton.Image = (Image)resources.GetObject("ProductDetailsFormbutton.Image");
-            ProductDetailsFormbutton.ImageAlign = ContentAlignment.MiddleLeft;
-            ProductDetailsFormbutton.Location = new Point(3, 4);
-            ProductDetailsFormbutton.Margin = new Padding(3, 4, 3, 4);
-            ProductDetailsFormbutton.Name = "ProductDetailsFormbutton";
-            ProductDetailsFormbutton.Size = new Size(908, 74);
-            ProductDetailsFormbutton.TabIndex = 4;
-            ProductDetailsFormbutton.Text = "Product Details Dashboard";
-            ProductDetailsFormbutton.UseVisualStyleBackColor = true;
+            label7.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // ProductDetailsForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             ClientSize = new Size(914, 600);
+            ControlBox = false;
             Controls.Add(tableLayoutPanel1);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            MinimumSize = new Size(800, 600);
             Name = "ProductDetailsForm";
-            Text = "ProductDetailsForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Product Details";
+            Load += ProductDetailsForm_Load;
+            Resize += ProductDetailsForm_Resize;
             tableLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
