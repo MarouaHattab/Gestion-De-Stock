@@ -181,7 +181,24 @@ namespace GestionDeStock.ProductForm
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Erreur lors de la suppression : {ex.Message}", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    // Get the most detailed error message available
+                    string errorMessage = ex.Message;
+                    if (ex.InnerException != null)
+                    {
+                        errorMessage = ex.InnerException.Message;
+                    }
+                    
+                    // Show a more user-friendly error message
+                    MessageBox.Show(
+                        $"Erreur lors de la suppression : {errorMessage}\n\n" +
+                        "Si ce produit est utilisé dans des mouvements de stock, vous devez d'abord supprimer ces mouvements.", 
+                        "Erreur de suppression", 
+                        MessageBoxButtons.OK, 
+                        MessageBoxIcon.Error
+                    );
+                    
+                    // Log the full exception details
+                    System.Diagnostics.Debug.WriteLine($"Delete product error: {ex}");
                 }
             }
         }

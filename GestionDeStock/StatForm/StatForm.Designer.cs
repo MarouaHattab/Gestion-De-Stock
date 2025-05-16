@@ -75,6 +75,7 @@
             mainTableLayoutPanel.Location = new Point(0, 0);
             mainTableLayoutPanel.Margin = new Padding(3, 4, 3, 4);
             mainTableLayoutPanel.Name = "mainTableLayoutPanel";
+            mainTableLayoutPanel.Padding = new Padding(5);
             mainTableLayoutPanel.RowCount = 3;
             mainTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 80F));
             mainTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -89,25 +90,30 @@
             panelTopProducts.Controls.Add(dgvTopProducts);
             panelTopProducts.Controls.Add(lblTopProductsHeader);
             panelTopProducts.Dock = DockStyle.Fill;
-            panelTopProducts.Location = new Point(11, 93);
+            panelTopProducts.Location = new Point(16, 98);
             panelTopProducts.Margin = new Padding(11, 13, 11, 13);
             panelTopProducts.Name = "panelTopProducts";
             panelTopProducts.Padding = new Padding(11, 13, 11, 13);
-            panelTopProducts.Size = new Size(563, 446);
+            panelTopProducts.Size = new Size(558, 441);
             panelTopProducts.TabIndex = 0;
             // 
             // dgvTopProducts
             // 
             dgvTopProducts.AllowUserToAddRows = false;
             dgvTopProducts.AllowUserToDeleteRows = false;
-            dgvTopProducts.ColumnHeadersHeight = 29;
+            dgvTopProducts.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvTopProducts.BorderStyle = BorderStyle.None;
+            dgvTopProducts.ColumnHeadersHeight = 40;
             dgvTopProducts.Dock = DockStyle.Fill;
             dgvTopProducts.Location = new Point(11, 53);
             dgvTopProducts.Margin = new Padding(3, 4, 3, 4);
             dgvTopProducts.Name = "dgvTopProducts";
             dgvTopProducts.ReadOnly = true;
+            dgvTopProducts.RowHeadersVisible = false;
             dgvTopProducts.RowHeadersWidth = 51;
-            dgvTopProducts.Size = new Size(539, 378);
+            dgvTopProducts.RowTemplate.Height = 30;
+            dgvTopProducts.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvTopProducts.Size = new Size(534, 373);
             dgvTopProducts.TabIndex = 1;
             // 
             // lblTopProductsHeader
@@ -116,7 +122,7 @@
             lblTopProductsHeader.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lblTopProductsHeader.Location = new Point(11, 13);
             lblTopProductsHeader.Name = "lblTopProductsHeader";
-            lblTopProductsHeader.Size = new Size(539, 40);
+            lblTopProductsHeader.Size = new Size(534, 40);
             lblTopProductsHeader.TabIndex = 0;
             lblTopProductsHeader.Text = "Produits les plus vendus";
             // 
@@ -127,24 +133,30 @@
             panelLowStock.Controls.Add(dgvLowStock);
             panelLowStock.Controls.Add(lblLowStockHeader);
             panelLowStock.Dock = DockStyle.Fill;
-            panelLowStock.Location = new Point(596, 93);
+            panelLowStock.Location = new Point(596, 98);
             panelLowStock.Margin = new Padding(11, 13, 11, 13);
             panelLowStock.Name = "panelLowStock";
             panelLowStock.Padding = new Padding(11, 13, 11, 13);
-            panelLowStock.Size = new Size(563, 446);
+            panelLowStock.Size = new Size(558, 441);
             panelLowStock.TabIndex = 1;
             // 
             // dgvLowStock
             // 
             dgvLowStock.AllowUserToAddRows = false;
             dgvLowStock.AllowUserToDeleteRows = false;
-            dgvLowStock.ColumnHeadersHeight = 29;
+            dgvLowStock.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvLowStock.BorderStyle = BorderStyle.None;
+            dgvLowStock.ColumnHeadersHeight = 40;
+            dgvLowStock.Dock = DockStyle.Fill;
             dgvLowStock.Location = new Point(11, 53);
             dgvLowStock.Margin = new Padding(3, 4, 3, 4);
             dgvLowStock.Name = "dgvLowStock";
             dgvLowStock.ReadOnly = true;
+            dgvLowStock.RowHeadersVisible = false;
             dgvLowStock.RowHeadersWidth = 51;
-            dgvLowStock.Size = new Size(537, 376);
+            dgvLowStock.RowTemplate.Height = 30;
+            dgvLowStock.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvLowStock.Size = new Size(534, 373);
             dgvLowStock.TabIndex = 1;
             // 
             // lblLowStockHeader
@@ -153,7 +165,7 @@
             lblLowStockHeader.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lblLowStockHeader.Location = new Point(11, 13);
             lblLowStockHeader.Name = "lblLowStockHeader";
-            lblLowStockHeader.Size = new Size(539, 40);
+            lblLowStockHeader.Size = new Size(534, 40);
             lblLowStockHeader.TabIndex = 0;
             lblLowStockHeader.Text = "Produits avec stocks faibles";
             // 
@@ -164,25 +176,30 @@
             panelMonthlySales.Controls.Add(dgvMonthlySales);
             panelMonthlySales.Controls.Add(lblMonthlySalesHeader);
             panelMonthlySales.Dock = DockStyle.Fill;
-            panelMonthlySales.Location = new Point(11, 565);
+            panelMonthlySales.Location = new Point(16, 565);
             panelMonthlySales.Margin = new Padding(11, 13, 11, 13);
             panelMonthlySales.Name = "panelMonthlySales";
             panelMonthlySales.Padding = new Padding(11, 13, 11, 13);
-            panelMonthlySales.Size = new Size(563, 446);
+            panelMonthlySales.Size = new Size(558, 441);
             panelMonthlySales.TabIndex = 2;
             // 
             // dgvMonthlySales
             // 
             dgvMonthlySales.AllowUserToAddRows = false;
             dgvMonthlySales.AllowUserToDeleteRows = false;
-            dgvMonthlySales.ColumnHeadersHeight = 29;
+            dgvMonthlySales.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvMonthlySales.BorderStyle = BorderStyle.None;
+            dgvMonthlySales.ColumnHeadersHeight = 40;
             dgvMonthlySales.Dock = DockStyle.Fill;
             dgvMonthlySales.Location = new Point(11, 53);
             dgvMonthlySales.Margin = new Padding(3, 4, 3, 4);
             dgvMonthlySales.Name = "dgvMonthlySales";
             dgvMonthlySales.ReadOnly = true;
+            dgvMonthlySales.RowHeadersVisible = false;
             dgvMonthlySales.RowHeadersWidth = 51;
-            dgvMonthlySales.Size = new Size(539, 378);
+            dgvMonthlySales.RowTemplate.Height = 30;
+            dgvMonthlySales.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvMonthlySales.Size = new Size(534, 373);
             dgvMonthlySales.TabIndex = 1;
             // 
             // lblMonthlySalesHeader
@@ -191,7 +208,7 @@
             lblMonthlySalesHeader.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lblMonthlySalesHeader.Location = new Point(11, 13);
             lblMonthlySalesHeader.Name = "lblMonthlySalesHeader";
-            lblMonthlySalesHeader.Size = new Size(539, 40);
+            lblMonthlySalesHeader.Size = new Size(534, 40);
             lblMonthlySalesHeader.TabIndex = 0;
             lblMonthlySalesHeader.Text = "Ventes mensuelles";
             // 
@@ -206,21 +223,26 @@
             panelCategoryDistribution.Margin = new Padding(11, 13, 11, 13);
             panelCategoryDistribution.Name = "panelCategoryDistribution";
             panelCategoryDistribution.Padding = new Padding(11, 13, 11, 13);
-            panelCategoryDistribution.Size = new Size(563, 446);
+            panelCategoryDistribution.Size = new Size(558, 441);
             panelCategoryDistribution.TabIndex = 3;
             // 
             // dgvCategoryDistribution
             // 
             dgvCategoryDistribution.AllowUserToAddRows = false;
             dgvCategoryDistribution.AllowUserToDeleteRows = false;
-            dgvCategoryDistribution.ColumnHeadersHeight = 29;
+            dgvCategoryDistribution.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvCategoryDistribution.BorderStyle = BorderStyle.None;
+            dgvCategoryDistribution.ColumnHeadersHeight = 40;
             dgvCategoryDistribution.Dock = DockStyle.Fill;
             dgvCategoryDistribution.Location = new Point(11, 53);
             dgvCategoryDistribution.Margin = new Padding(3, 4, 3, 4);
             dgvCategoryDistribution.Name = "dgvCategoryDistribution";
             dgvCategoryDistribution.ReadOnly = true;
+            dgvCategoryDistribution.RowHeadersVisible = false;
             dgvCategoryDistribution.RowHeadersWidth = 51;
-            dgvCategoryDistribution.Size = new Size(539, 378);
+            dgvCategoryDistribution.RowTemplate.Height = 30;
+            dgvCategoryDistribution.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvCategoryDistribution.Size = new Size(534, 373);
             dgvCategoryDistribution.TabIndex = 1;
             // 
             // lblCategoryDistributionHeader
@@ -229,7 +251,7 @@
             lblCategoryDistributionHeader.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lblCategoryDistributionHeader.Location = new Point(11, 13);
             lblCategoryDistributionHeader.Name = "lblCategoryDistributionHeader";
-            lblCategoryDistributionHeader.Size = new Size(539, 40);
+            lblCategoryDistributionHeader.Size = new Size(534, 40);
             lblCategoryDistributionHeader.TabIndex = 0;
             lblCategoryDistributionHeader.Text = "Distribution par catégorie";
             // 
@@ -240,10 +262,10 @@
             panel1.Controls.Add(btnRefresh);
             panel1.Controls.Add(btnBack);
             panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(3, 4);
+            panel1.Location = new Point(8, 9);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1164, 72);
+            panel1.Size = new Size(1154, 72);
             panel1.TabIndex = 3;
             // 
             // lblTitle
@@ -264,7 +286,7 @@
             btnRefresh.FlatStyle = FlatStyle.Flat;
             btnRefresh.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnRefresh.ForeColor = Color.White;
-            btnRefresh.Location = new Point(1032, 13);
+            btnRefresh.Location = new Point(1022, 13);
             btnRefresh.Margin = new Padding(3, 4, 3, 4);
             btnRefresh.Name = "btnRefresh";
             btnRefresh.Size = new Size(121, 45);
@@ -282,7 +304,7 @@
             btnBack.FlatStyle = FlatStyle.Flat;
             btnBack.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(895, 13);
+            btnBack.Location = new Point(885, 13);
             btnBack.Margin = new Padding(3, 4, 3, 4);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(121, 45);

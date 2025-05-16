@@ -64,11 +64,56 @@ namespace GestionDeStock.Data.Repositories
 
         public async Task DeleteProductAsync(int id)
         {
-            var product = await _context.Products.FindAsync(id);
-            if (product != null)
+            using (var transaction = await _context.Database.BeginTransactionAsync())
             {
-                _context.Products.Remove(product);
-                await _context.SaveChangesAsync();
+                try
+                {
+                    // First get the product with its related entities
+                    var product = await _context.Products
+                        .Include(p => p.StockIns)
+                        .Include(p => p.StockOuts)
+                        .FirstOrDefaultAsync(p => p.ProductId == id);
+                        
+                    if (product != null)
+                    {
+                        // First remove all related StockIn records
+                        var stockIns = await _context.StockIns
+                            .Where(si => si.ProductId == id)
+                            .ToListAsync();
+                            
+                        if (stockIns.Any())
+                        {
+                            _context.StockIns.RemoveRange(stockIns);
+                            await _context.SaveChangesAsync();
+                        }
+                        
+                        // Then remove all related StockOut records
+                        var stockOuts = await _context.StockOuts
+                            .Where(so => so.ProductId == id)
+                            .ToListAsync();
+                            
+                        if (stockOuts.Any())
+                        {
+                            _context.StockOuts.RemoveRange(stockOuts);
+                            await _context.SaveChangesAsync();
+                        }
+                        
+                        // Finally remove the product
+                        _context.Products.Remove(product);
+                        await _context.SaveChangesAsync();
+                        
+                        // Commit the transaction if everything succeeded
+                        await transaction.CommitAsync();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Something went wrong, rollback the transaction
+                    await transaction.RollbackAsync();
+                    
+                    // Re-throw the exception with more details
+                    throw new Exception($"Error deleting product: {ex.Message}", ex);
+                }
             }
         }
     }

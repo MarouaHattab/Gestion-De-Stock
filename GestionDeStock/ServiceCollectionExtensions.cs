@@ -13,7 +13,6 @@ namespace GestionDeStock
         {
             // Register login form
             services.AddTransient<LoginForm.LoginForm>();
-            // Registration form temporarily removed
             
             // Register dashboard form
             services.AddTransient<DashboardForm.DashboardForm>();
@@ -36,9 +35,10 @@ namespace GestionDeStock
             
             // Register statistics form
             services.AddTransient<StatForm.StatForm>(provider => 
-                new StatForm.StatForm(provider.GetRequiredService<GestionDeStock.Data.Context.StockDbContext>()) { 
-                    _serviceProvider = provider 
-                });
+                new StatForm.StatForm(
+                    provider.GetRequiredService<GestionDeStock.Data.Context.StockDbContext>(),
+                    provider
+                ));
             
             // Register main form (now unused since we start with LoginForm)
             services.AddTransient<MainForm>();

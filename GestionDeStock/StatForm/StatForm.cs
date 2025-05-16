@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using GestionDeStock.Data.Context;
 using GestionDeStock.Data.Entites;
+using GestionDeStock.Data.Repositories;
+using GestionDeStock.ProductForm;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -17,7 +19,7 @@ namespace GestionDeStock.StatForm
     public partial class StatForm : Form
     {
         private readonly StockDbContext _context;
-        public IServiceProvider _serviceProvider;
+        private readonly IServiceProvider _serviceProvider;
 
         // Define modern color palette to match dashboard
         private readonly Color primaryColor = Color.FromArgb(0, 122, 204);
@@ -26,10 +28,12 @@ namespace GestionDeStock.StatForm
         private readonly Color textLightColor = Color.FromArgb(240, 240, 240);
         private readonly Color textDarkColor = Color.FromArgb(30, 30, 30);
 
-        public StatForm(StockDbContext context)
+        public StatForm(StockDbContext context, IServiceProvider serviceProvider)
         {
             InitializeComponent();
             _context = context;
+            _serviceProvider = serviceProvider;
+            
             this.WindowState = FormWindowState.Maximized;
             this.MinimumSize = new Size(1024, 768);
             
@@ -252,67 +256,186 @@ namespace GestionDeStock.StatForm
                 
                 // Filter on the client side
                 var lowStockProducts = products
-                    .Where(p => p.Quantity > 0 && p.Quantity <= p.AlertThreshold)
+                    .Where(p => p.Quantity <= p.AlertThreshold) // Include zero stock products too
                     .Select(p => new
                     {
+                        ProductId = p.ProductId,
                         ProductName = p.Name,
                         CategoryName = p.Category.Name,
                         CurrentStock = p.Quantity,
                         AlertThreshold = p.AlertThreshold,
+                        StockPercent = p.AlertThreshold > 0 ? 
+                            Math.Round((double)p.Quantity / p.AlertThreshold * 100, 1) : 0,
                         StockStatus = p.StockStatus,
                         PurchasePrice = p.PurchasePrice,
-                        StockValue = p.Quantity * p.PurchasePrice
+                        StockValue = p.Quantity * p.PurchasePrice,
+                        IsOutOfStock = p.Quantity == 0,
+                        IsCritical = p.Quantity > 0 && p.Quantity <= p.AlertThreshold * 0.25,
+                        IsLow = p.Quantity > 0 && p.Quantity <= p.AlertThreshold * 0.5
                     })
-                    .OrderBy(x => x.CurrentStock)
+                    .OrderBy(x => x.IsOutOfStock ? 0 : (x.IsCritical ? 1 : (x.IsLow ? 2 : 3))) // Sort by criticality
+                    .ThenBy(x => x.StockPercent)
+                    .ThenBy(x => x.ProductName)
                     .ToList();
                 
                 // Create DataTable for display
                 DataTable dt = new DataTable();
+                dt.Columns.Add("ID", typeof(int));
                 dt.Columns.Add("Produit", typeof(string));
                 dt.Columns.Add("Catégorie", typeof(string));
                 dt.Columns.Add("Stock Actuel", typeof(int));
                 dt.Columns.Add("Seuil d'Alerte", typeof(int));
+                dt.Columns.Add("% du Seuil", typeof(double));
                 dt.Columns.Add("Statut", typeof(string));
                 dt.Columns.Add("Prix d'Achat", typeof(decimal));
                 dt.Columns.Add("Valeur du Stock", typeof(decimal));
+                dt.Columns.Add("IsOutOfStock", typeof(bool));
+                dt.Columns.Add("IsCritical", typeof(bool));
+                dt.Columns.Add("IsLow", typeof(bool));
                 
                 foreach (var product in lowStockProducts)
                 {
                     dt.Rows.Add(
+                        product.ProductId,
                         product.ProductName,
                         product.CategoryName,
                         product.CurrentStock,
                         product.AlertThreshold,
+                        product.StockPercent,
                         product.StockStatus,
                         product.PurchasePrice,
-                        product.StockValue
+                        product.StockValue,
+                        product.IsOutOfStock,
+                        product.IsCritical,
+                        product.IsLow
                     );
                 }
                 
                 dgvLowStock.DataSource = dt;
                 
-                // Format currency columns
+                // Hide technical columns
+                dgvLowStock.Columns["IsOutOfStock"].Visible = false;
+                dgvLowStock.Columns["IsCritical"].Visible = false;
+                dgvLowStock.Columns["IsLow"].Visible = false;
+                dgvLowStock.Columns["ID"].Visible = false;
+                
+                // Format columns
                 dgvLowStock.Columns["Prix d'Achat"].DefaultCellStyle.Format = "C2";
                 dgvLowStock.Columns["Valeur du Stock"].DefaultCellStyle.Format = "C2";
+                dgvLowStock.Columns["% du Seuil"].DefaultCellStyle.Format = "0.0 %";
+                
+                // Adjust column widths for better readability
+                dgvLowStock.Columns["Produit"].Width = 200;
+                dgvLowStock.Columns["Catégorie"].Width = 150;
+                dgvLowStock.Columns["Statut"].Width = 120;
+                dgvLowStock.Columns["Stock Actuel"].Width = 100;
+                dgvLowStock.Columns["Seuil d'Alerte"].Width = 100;
+                dgvLowStock.Columns["% du Seuil"].Width = 100;
+                
+                // Ensure the DataGridView fills the panel
+                dgvLowStock.Dock = DockStyle.Fill;
                 
                 // Set header text
-                lblLowStockHeader.Text = "Produits en stock faible";
+                lblLowStockHeader.Text = $"Produits en stock faible ({lowStockProducts.Count})";
                 
                 // Add cell formatting for stock status
                 dgvLowStock.CellFormatting += (sender, e) => {
-                    if (e.ColumnIndex == dgvLowStock.Columns["Statut"].Index && e.RowIndex >= 0)
+                    if (e.RowIndex < 0) return;
+                    
+                    DataGridViewRow row = dgvLowStock.Rows[e.RowIndex];
+                    bool isOutOfStock = (bool)row.Cells["IsOutOfStock"].Value;
+                    bool isCritical = (bool)row.Cells["IsCritical"].Value;
+                    bool isLow = (bool)row.Cells["IsLow"].Value;
+                    
+                    // Apply row-based background color based on stock status
+                    if (isOutOfStock)
                     {
-                        string status = e.Value?.ToString() ?? "";
+                        // Out of stock - red background
+                        e.CellStyle.BackColor = Color.FromArgb(255, 200, 200);
                         
-                        if (status == "Niveau critique")
+                        if (e.ColumnIndex == dgvLowStock.Columns["Statut"].Index)
                         {
                             e.CellStyle.ForeColor = Color.White;
                             e.CellStyle.BackColor = Color.FromArgb(220, 53, 69); // Red
                             e.CellStyle.Font = new Font(dgvLowStock.Font, FontStyle.Bold);
                         }
-                        else if (status == "Niveau bas")
+                    }
+                    else if (isCritical)
+                    {
+                        // Critical low stock - light red background
+                        e.CellStyle.BackColor = Color.FromArgb(255, 230, 230);
+                        
+                        if (e.ColumnIndex == dgvLowStock.Columns["Statut"].Index)
+                        {
+                            e.CellStyle.ForeColor = Color.White;
+                            e.CellStyle.BackColor = Color.FromArgb(255, 70, 70); // Bright red
+                            e.CellStyle.Font = new Font(dgvLowStock.Font, FontStyle.Bold);
+                        }
+                    }
+                    else if (isLow)
+                    {
+                        // Low stock - yellow background
+                        e.CellStyle.BackColor = Color.FromArgb(255, 252, 220);
+                        
+                        if (e.ColumnIndex == dgvLowStock.Columns["Statut"].Index)
                         {
                             e.CellStyle.BackColor = Color.FromArgb(255, 193, 7); // Yellow
+                            e.CellStyle.Font = new Font(dgvLowStock.Font, FontStyle.Bold);
+                        }
+                    }
+                    
+                    // Format the "% du Seuil" column with a progress bar style
+                    if (e.ColumnIndex == dgvLowStock.Columns["% du Seuil"].Index)
+                    {
+                        e.CellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                        
+                        if (isOutOfStock)
+                        {
+                            e.CellStyle.ForeColor = Color.White;
+                            e.CellStyle.BackColor = Color.FromArgb(220, 53, 69); // Red
+                            e.CellStyle.Font = new Font(dgvLowStock.Font, FontStyle.Bold);
+                        }
+                        else if (isCritical)
+                        {
+                            e.CellStyle.ForeColor = Color.Black;
+                            e.CellStyle.BackColor = Color.FromArgb(255, 128, 128); // Light red
+                        }
+                        else if (isLow)
+                        {
+                            e.CellStyle.BackColor = Color.FromArgb(255, 193, 7); // Yellow
+                        }
+                    }
+                };
+                
+                // Set double-click handler to open product details
+                dgvLowStock.DoubleClick += (sender, e) => {
+                    if (dgvLowStock.SelectedRows.Count > 0)
+                    {
+                        try
+                        {
+                            DataGridViewRow row = dgvLowStock.SelectedRows[0];
+                            int productId = (int)row.Cells["ID"].Value;
+                            
+                            // Find the product and show details
+                            var product = products.FirstOrDefault(p => p.ProductId == productId);
+                            if (product != null && _serviceProvider != null)
+                            {
+                                var dialogForm = new ProductDetailsForm(product, _serviceProvider);
+                                if (dialogForm.ShowDialog() == DialogResult.OK)
+                                {
+                                    // If product was updated, reload data
+                                    var repo = _serviceProvider.GetRequiredService<IProductRepository>();
+                                    repo.UpdateProductAsync(product).ContinueWith(_ => {
+                                        this.Invoke(new Action(() => {
+                                            LoadData();
+                                        }));
+                                    });
+                                }
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            System.Diagnostics.Debug.WriteLine($"Error opening product details: {ex.Message}");
                         }
                     }
                 };

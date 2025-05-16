@@ -32,10 +32,10 @@ namespace GestionDeStock
             _currentForm.Show();
         }
 
-        private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
+        private void LoginForm_FormClosed(object? sender, FormClosedEventArgs e)
         {
             // If the login form was closed with OK result, show the dashboard
-            if (((Form)sender).DialogResult == DialogResult.OK)
+            if (((Form)sender!).DialogResult == DialogResult.OK)
             {
                 ShowDashboardForm();
             }

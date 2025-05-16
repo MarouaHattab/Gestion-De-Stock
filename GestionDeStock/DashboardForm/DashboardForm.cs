@@ -24,7 +24,7 @@ namespace GestionDeStock.DashboardForm
         private readonly Color textDarkColor = Color.FromArgb(30, 30, 30);
         
         // Stock alert indicators
-        private Label alertBadge;
+        private Label alertBadge = new Label();
         private int _zeroStockCount = 0;
         private int _lowStockCount = 0;
 

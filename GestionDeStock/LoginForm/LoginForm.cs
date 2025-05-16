@@ -212,9 +212,8 @@ namespace GestionDeStock.LoginForm
 
         private void LnkCreateAccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // Registration not available for now
-            MessageBox.Show("Registration feature is currently disabled.", "Information", 
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Registration feature is currently disabled. Please contact an administrator to create an account.", 
+                "Registration", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void pictureBoxUser_Click(object sender, EventArgs e)

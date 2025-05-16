@@ -15,20 +15,21 @@ namespace GestionDeStock.ProductForm
 {
     public partial class ProductDetailsForm : Form
     {
-        private Product _product;
-        private IServiceProvider _serviceProvider;
-        private List<Category> _categories;
-        private ComboBox categoryComboBox;
+        private Product? _product;
+        private IServiceProvider? _serviceProvider;
+        private List<Category>? _categories;
+        private ComboBox? categoryComboBox;
 
         public ProductDetailsForm()
         {
             InitializeComponent();
         }
 
-        public ProductDetailsForm(Product product, IServiceProvider serviceProvider = null) : this()
+        public ProductDetailsForm(Product product, IServiceProvider? serviceProvider = null) : this()
         {
             _product = product;
             _serviceProvider = serviceProvider ?? Program.ServiceProvider;
+            _categories = new List<Category>(); // Initialize with empty list
             
             // Initialize CategoryId if it's a new product
             if (_product.ProductId == 0 && _product.CategoryId == 0)
@@ -51,7 +52,7 @@ namespace GestionDeStock.ProductForm
             LoadProductData();
         }
         
-        private void ProductDetailsForm_Load(object sender, EventArgs e)
+        private void ProductDetailsForm_Load(object? sender, EventArgs e)
         {
             // Center the form on screen and ensure it's properly sized
             CenterToScreen();
@@ -60,7 +61,7 @@ namespace GestionDeStock.ProductForm
             AdjustControlsLayout();
         }
         
-        private void ProductDetailsForm_Resize(object sender, EventArgs e)
+        private void ProductDetailsForm_Resize(object? sender, EventArgs e)
         {
             // Adjust layout when form is resized
             AdjustControlsLayout();
@@ -87,6 +88,8 @@ namespace GestionDeStock.ProductForm
         {
             try
             {
+                if (_serviceProvider == null) return;
+                
                 var categoryRepo = _serviceProvider.GetRequiredService<ICategoryRepository>();
                 _categories = await categoryRepo.GetAllCategoriesAsync();
                 
@@ -106,7 +109,7 @@ namespace GestionDeStock.ProductForm
                 categoryComboBox.DataSource = _categories;
                 
                 // Set the selected item based on the product's CategoryId
-                if (_product.CategoryId > 0)
+                if (_product != null && _product.CategoryId > 0)
                 {
                     foreach (Category category in categoryComboBox.Items)
                     {
@@ -121,7 +124,7 @@ namespace GestionDeStock.ProductForm
                 // Handle selection changed to update the product's CategoryId
                 categoryComboBox.SelectedIndexChanged += (sender, e) =>
                 {
-                    if (categoryComboBox.SelectedItem != null)
+                    if (categoryComboBox.SelectedItem != null && _product != null)
                     {
                         var selectedCategory = (Category)categoryComboBox.SelectedItem;
                         _product.CategoryId = selectedCategory.CategoryId;
@@ -136,6 +139,8 @@ namespace GestionDeStock.ProductForm
 
         private void LoadProductData()
         {
+            if (_product == null) return;
+            
             // Set up data bindings for the text boxes
             textBox1.DataBindings.Clear();
             textBox1.DataBindings.Add("Text", productBindingSource, "Name", true, DataSourceUpdateMode.OnPropertyChanged);
